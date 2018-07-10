@@ -13,8 +13,21 @@ class PostsController extends Controller
      */
     public function index()
     {
-        //
-    }
+        if(\Auth::Check()){
+            $user=\Auth::user();
+            $post=$user->posts()->orderBy('created_at','desc')->pagenate(10);
+            //$favorite=$user->favorites()->orderBy('created_at','desc')
+
+            $data=['user'=>$user,'posts'=>$posts,//'favorites'=>$favorites
+            ];
+            
+            $date += $this -> counts($user);
+            
+            return view('users.show',$data);}else{
+                return view('welcome');}
+            
+        }
+    
 
     /**
      * Show the form for creating a new resource.
@@ -23,7 +36,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -34,7 +47,21 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+           $this->validate($request, [
+            'subcategory' => 'required|max191',
+            'title'=>'required|max:25',
+            'subject' => 'required|max25',
+            'detail' => 'required|max:191',
+        ]);
+
+        $request->user()->posts()->create([
+             'title' =>  $request->title,
+           'subject' =>  $request->subject,
+            'content' => $request->content,
+            
+        ]);
+
+        return redirect()->back();
     }
 
     /**
@@ -79,6 +106,12 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        //
+         $post = \App\Post::find($id);
+
+        if (\Auth::id() === $post->user_id) {
+            $post->delete();
+        }
+
+        return redirect()->back();
     }
 }
