@@ -5,13 +5,13 @@
         <title>タイトル</title>
     </head>
     <body>
-        <a href=""></a>>FOOD</p>
-        <P>LEISURE</P>
-        <p>SPORTS</p>
-        <P>BOOKS</P>
-        <P>MOVIE</P>
-        <P>MUSIC</P>
-        <P>TEXTBOOK</P>
-        <P>OTHERS</P>
+        <a href='subcategory.food'>FOOD</a><br>
+        <a href='subcategory.leisure'>LEISURE</a><br>
+        <a href='subcategory.sports'>SPORTS</a><br>
+        <a href='subcategory.books'>BOOKS</a><br>
+        <a href='subcategory.movie'>MOVIE</a><br>
+        <a href='subcategory.music'>MUSIC</a><br>
+        <a href='subcategory.textbook'>TEXTBOOK</a><br>
+        <a href='subcategory.others'>OTHERS</a><br>
     </body>
 </html>

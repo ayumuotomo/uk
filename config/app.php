@@ -1,6 +1,8 @@
 <?php
 
 return [
+    
+    'category' => ['food', 'leisure', 'sports', 'books', 'movies', 'music', 'textbook', 'others'],
 
     /*
     |--------------------------------------------------------------------------
