@@ -55,6 +55,7 @@ class PostsController extends Controller
         ]);
 
         $request->user()->posts()->create([
+            'subcategory' => $request->subcategory,
              'title' =>  $request->title,
            'subject' =>  $request->subject,
             'content' => $request->content,
