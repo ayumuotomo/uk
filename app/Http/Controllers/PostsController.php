@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
 
 class PostsController extends Controller
 {
@@ -12,19 +14,24 @@ class PostsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    { 
+        $data = [];
         if(\Auth::Check()){
             $user=\Auth::user();
-            $post=$user->posts()->orderBy('created_at','desc')->pagenate(10);
-            //$favorite=$user->favorites()->orderBy('created_at','desc')
+            $posts=$user->feed_posts()->orderBy('created_at','desc')->pagenate(10);
+            
 
-            $data=['user'=>$user,'posts'=>$posts,//'favorites'=>$favorites
+            $data=[
+                'user'=>$user,
+                'posts'=>$posts,
             ];
             
-            $date += $this -> counts($user);
+           /** $date += $this -> counts($user);
             
-            return view('users.show',$data);}else{
-                return view('welcome');}
+            return view('users.show',$data);}else{ */
+                return view('welcome, $data');
+                
+            }
             
         }
     
@@ -47,20 +54,47 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-           $this->validate($request, [
+        
+        $this->validate($request, [
+            'subcategory' => 'required|max:191',
+            'title'=>'required|max:25',
+            'subject' => 'required|max:25',
+            'detail' => 'required|max:191',
+        ]);
+        $request->user()->posts()->create([
+            'subcategory' => $request->subcategory, 
+            'title' =>  $request->title,
+            'subject' =>  $request->subject,
+            'content' => $request->content,
+        ]);
+        return redirect()->back();
+        
+        
+         /**if(\Auth::check(){
+            $this->validate($request, [
             'subcategory' => 'required|max191',
             'title'=>'required|max:25',
             'subject' => 'required|max25',
             'detail' => 'required|max:191',
-        ]);
-
-        $request->user()->posts()->create([
+        ])**/
+        
+       /** $post=new Post;
+        $post->subcategory=$request->subcategory;
+        $post->title=$request->title;
+        $post->subject=$request->subject;
+        $post->detail=$request->detail;
+        $post->save();
+    
+        }
+    
+       
+        /**$request->user()->posts()->create([
             'subcategory' => $request->subcategory,
              'title' =>  $request->title,
            'subject' =>  $request->subject,
             'content' => $request->content,
             
-        ]);
+        ]);*/
 
         return redirect()->back();
     }
