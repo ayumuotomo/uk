@@ -21,9 +21,28 @@ Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login')->name('login.post');
 Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
- Route::resource('users', 'UsersController', ['only' => ['show']]);
+
+Route::resource('users', 'UsersController', ['only' => ['show']]);
 
 
+Route::group(['middleware' => 'auth'], function () {
+    
+    Route::resource('users', 'UsersController', ['only' =>  'show']);
+    
+    Route::group(['prefix' => 'users/{id}'], function () {
+      
+        Route::get('favorites', 'PostFavoriteController@favorites')->name('users.favorites');
+    });
+
+    Route::group(['prefix' => 'posts/{id}'], function () {
+                Route::post('favorite', 'PostFavoriteController@store')->name('post.favorite');
+                Route::delete('unfavorite', 'PostFavoriteController@destroy')->name('post.unfavorite');
+               
+    });
+
+    Route::resource('posts', 'PostsController', ['only' => ['store', 'destroy']]);
+});
+ 
 //URLを指定
 Route::get('posts/{category}', 'PostsController@index');
 
@@ -52,4 +71,3 @@ Route::get('subcategory.sports', function(){
 Route::get('subcategory.others', function(){
     return view('subcategory.others');
 });
-

@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-xs-offset-3 col-xs-6">
         <div class="panel panel-default">
-            <div class="panel-heading">ログイン</div>
+            <div class="panel-heading">Login</div>
             <div class="panel-body">
                 {!! Form::open(['route' => 'login.post']) !!}
                     <div class="form-group">
