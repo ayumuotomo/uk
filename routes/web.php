@@ -23,8 +23,11 @@ Route::post('login', 'Auth\LoginController@login')->name('login.post');
 Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
  Route::resource('users', 'UsersController', ['only' => ['show']]);
 
+
+//URLを指定
 Route::get('posts/{category}', 'PostsController@index');
 
+//トップページから各サブカテに飛ぶ
 Route::get('subcategory.books', function(){
     return view('subcategory.books');
 });
@@ -49,3 +52,4 @@ Route::get('subcategory.sports', function(){
 Route::get('subcategory.others', function(){
     return view('subcategory.others');
 });
+
