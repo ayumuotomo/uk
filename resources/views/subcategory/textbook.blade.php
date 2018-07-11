@@ -17,9 +17,9 @@
         
         {{ Form::open(['route' => 'posts.store'], array('class' => 'form')) }}
 
- <div class="form-group">
+        <div class="form-group">
             <label>Subcategory</label>
-            {!! Form::textarea('subcategory', old('subcategory'), ['class' => 'form-control', 'rows' => '2', 'placeholder' => 'sub']) !!}
+            {!! Form::textarea('subcategory', old('subcategory'), ['class' => 'form-control', 'rows' => '2', 'placeholder' => 'textbook']) !!}
        </div>
 
 
