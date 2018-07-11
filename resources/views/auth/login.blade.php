@@ -7,11 +7,10 @@
             <div class="panel-heading">Login</div>
             <div class="panel-body">
                 {!! Form::open(['route' => 'login.post']) !!}
-                    <div class="form-group">
-                        {!! form::label('name', '名前') !!}
-                        {!! form::text('name', ['class' => 'form-control']) !!}
-                    </div>
-
+            <div class="form-group">
+           {!! form::label('name','Name')!!}
+           {!! form::text('name', old('name'), ['class' => 'form-control']) !!}
+           </div>
                     <div class="form-group">
                         {!! form::label('password', 'パスワード') !!}
                         {!! form::password('password', ['class' => 'form-control']) !!}
@@ -22,6 +21,7 @@
                     </div>
                 {!! form::close() !!}
             </div>
+      <p>New user? {!! link_to_route('signup.get', 'Sign up now!') !!}</p>
         </div>
     </div>
 </div>
