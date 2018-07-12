@@ -13,23 +13,29 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($name)
     { 
         $data = [];
         if(\Auth::Check()){
             $user=\Auth::user();
-            $posts=$user->feed_posts()->orderBy('created_at','desc')->pagenate(10);
+           // $posts=$user->feed_posts()->orderBy('created_at','desc')->pagenate(10);
+            $posts = [];
+             $cat = config('app.category');
+            // dd($cat[$name]);
             
-
+            
+            
+            
             $data=[
                 'user'=>$user,
                 'posts'=>$posts,
+                'subcategory' => $cat[$name],
             ];
             
-           /** $date += $this -> counts($user);
+          /** $date += $this -> counts($user);
             
             return view('users.show',$data);}else{ */
-                return view('welcome, $data');
+               return view('subcategory.index', $data);
                 
             }
             

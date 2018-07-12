@@ -50,6 +50,10 @@ Route::resource('posts', 'PostsController', ['only' => ['store', 'destroy']]);
 });
  
 
+
+
+Route::get('subcategory/{name}', 'PostsController@index');
+
 //トップページから各サブカテに飛ぶ
 Route::get('subcategory.books', function(){
     return view('subcategory.books');

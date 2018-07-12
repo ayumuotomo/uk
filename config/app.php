@@ -2,7 +2,118 @@
 
 return [
     
-    'category' => ['food', 'leisure', 'sports', 'books', 'movies', 'music', 'textbook', 'others'],
+    'category' => [
+        'food' => [
+            'name' => 'food',
+            'label' => [
+                'place' => 'Station',
+                'title' => 'Store Name'
+            ],
+            'placeholder' => [
+                'place' => '二子玉川',
+                'title' => 'Bills'
+            ],
+            
+        ],
+        
+        'leisure' => [
+            'name' => 'leisure',
+            'label' => [
+                'place' => 'Place',
+                'title' => 'Activity'
+        ],
+        'placeholder' => [
+            'place' => '軽井沢',
+            'title' => 'ハレルニテラス'
+        ], 
+        
+            ],
+        
+            
+        'sports' => [
+            'name' => 'sports',
+            'label' => [
+                'place' => 'Sports',
+                'title' => 'Team'
+            ],
+            'placeholder' => [
+                'place' => 'バスケットボール',
+                'title' => 'Warriors'
+            ],
+          ],
+          
+        
+
+        'books' => [
+            'name' => 'books',
+            'label' => [
+                'place' => 'Author',
+                'title' => 'Title'
+            ],
+            'placeholder' => [
+                'place' => '東野圭吾',
+                'title' => '卒業'
+            ],
+        ], 
+        
+        
+  
+        'movies' => [
+            'name' => 'movies',
+            'label' => [
+                'place' => 'Director',
+                'title' => 'Title'
+            ],
+            'placeholder' => [
+                'place' => 'Steve Spilzberg',
+                'title' => 'IT'
+            ],
+        ],
+        
+        
+
+        'music' => [
+            'name' => 'music',
+            'label' => [
+                'place' => 'Artist',
+                'title' => 'Title'
+            ],
+            'placeholder' => [
+                'place' => 'Taylor Swift',
+                'title' => 'Love Story'
+            ],
+        ],
+        
+        
+
+        'textbook' => [
+            'name' => 'textbook',
+            'label' => [
+                'place' => 'Genre',
+                'title' => 'Title'
+            ],
+            'placeholder' => [
+                'place' => 'プログラミング',
+                'title' => '初めてのPHP'
+            ],
+        ],
+        
+
+        'others' => [
+            'name' => 'others',
+            'label' => [
+                'place' => 'Free space',
+                'title' => 'Free space'
+            ],
+            'placeholder' => [
+                'place' => 'Apple',
+                'title' => 'iPhone8'
+            ],
+        ],
+    ],
+    
+    
+    
 
     /*
     |--------------------------------------------------------------------------
