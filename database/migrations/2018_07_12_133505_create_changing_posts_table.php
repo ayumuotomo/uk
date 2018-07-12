@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class ChangePostsTable extends Migration
+class CreateChangingPostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -36,3 +36,4 @@ class ChangePostsTable extends Migration
         });
     }
 }
+
