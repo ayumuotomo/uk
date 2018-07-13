@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Post;
 
 class PostsController extends Controller
 {
@@ -18,8 +18,8 @@ class PostsController extends Controller
         $data = [];
         if(\Auth::Check()){
             $user=\Auth::user();
-           // $posts=$user->feed_posts()->orderBy('created_at','desc')->pagenate(10);
-            $posts = [];
+           // $posts=$user->feed_posts()->orderBy('created_at','desc')->paginate(10);
+            $posts = Post::where('subcategory', $name)->paginate(20);
              $cat = config('app.category');
             // dd($cat[$name]);
             
@@ -71,7 +71,7 @@ class PostsController extends Controller
             'subcategory' => $request->subcategory, 
             'title' =>  $request->title,
             'subject' =>  $request->subject,
-            'content' => $request->content,
+            'detail' => $request->detail,
         ]);
         return redirect()->back();
         

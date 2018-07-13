@@ -12,10 +12,16 @@
         <a href="subcategory/{{ ($category['name']) }}">{{strtoupper($category['name'])}}</a><br>
         @endforeach
         
-
+        @if (count($posts) > 0)
+                @include('posts.posts', ['posts' => $posts])
+        @endif
+           
     
   
    
 </div>
+
+
+                
 
 @endsection
