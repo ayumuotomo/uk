@@ -71,7 +71,7 @@ class PostsController extends Controller
             'subcategory' => $request->subcategory, 
             'title' =>  $request->title,
             'subject' =>  $request->subject,
-            'content' => $request->content,
+            'detail' => $request->detail,
         ]);
         return redirect()->back();
         
