@@ -1,19 +1,21 @@
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>タイトル</title>
-    </head>
-    <body>
-        <a href='subcategory.food'>FOOD</a><br>
-        <a href='subcategory.leisure'>LEISURE</a><br>
-        <a href='subcategory.sports'>SPORTS</a><br>
-        <a href='subcategory.books'>BOOKS</a><br>
-        <a href='subcategory.movie'>MOVIE</a><br>
-        <a href='subcategory.music'>MUSIC</a><br>
-        <a href='subcategory.textbook'>TEXTBOOK</a><br>
-        <a href='subcategory.others'>OTHERS</a><br>
-    </body>
+@extends('layouts.app')
+
+
+@section('content')
+<div class="container">
+     
     
-    
-</html>
+  
+     <ul class="nav nav-pills nav-justified">
+        <li><a href='subcategory.food'>FOOD</a></li>
+        <li><a href='subcategory.leisure'>LEISURE</a></li>
+        <li><a href='subcategory.sports'>SPORTS</a></li>
+        <li><a href='subcategory.books'>BOOKS</a></li>
+        <li><a href='subcategory.movie'>MOVIE</a></li>
+        <li><a href='subcategory.music'>MUSIC</a></li>
+        <li><a href='subcategory.textbook'>TEXTBOOK</a></li>
+        <li><a href='subcategory.others'>OTHERS</a></li>
+   </ul>
+</div>
+
+@endsection

@@ -1,56 +1,37 @@
-<header>
-    <nav class="navbar navbar-inverse navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">The U.K.</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    @if (Auth::check())
-                    
-                      
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
-                        
-                        <ul class="dropdown-menu">
-                           <li><a href="{{ route('users.show', Auth::id()) }}">Mypage</a> </li>
-                         
-                            <li role="separator" class="divider"></li>
-                            <li>{!! link_to_route('logout.get', 'Logout') !!}</li>
-                        </ul>
-                    </li>
-                    
-                <ul class="nav navbar-nav navbar-center">
-                    <li class="dropdown">
-                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
-                         
-                         <ul class="dropdown-menu">
-                            <li><a href='subcategory.food'>FOOD</a></li>
-                            <li><a href='subcategory.leisure'>LEISURE</a></li>
-                            <li><a href='subcategory.books'>BOOKS</a></li>
-                            <li><a href='subcategory.movie'>MOVIE</a></li>
-                            <li><a href='subcategory.music'>MUSIC</a></li>
-                            <li><a href='subcategory.sports'>SPORTS</a></li>
-                            <li><a href='subcategory.textbook'>TEXTBOOK</a></li>
-                            <li><a href='subcategory.others'>OTHERS</a></li>
-                         </ul>
-                         
-                    @else
-                        <li>{!! link_to_route('signup.get', 'Signup') !!}</li>
-                        <li>{!! link_to_route('login', 'Login') !!}</li>
-                    @endif
-                </ul>
-               
-                        
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
+
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+
+<div class="fullWidth header">
+  <div class="container">
+    <div class="col-xs-12 col-sm-2 col-md-3 col-md-offset-1 col-lg-4 col-lg-offset-1 header-logo"><a href="/" class="header-logo-name">The U.K.</a></div>
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 header-nav">
+      <ul>
+        <li>
+          <a href="/" class="header-nav-link header-nav-top-link">Home</a>
+        </li>
+        <li>
+          <a href="/" class="header-nav-link header-nav-top-link">Category</a>
+        <ul>
+            <li><a href="subcategory.leisure" class="header-nav-link header-nav-sub-link">LEISURE?</a></li>
+            <li><a href="subcategory.books" class="header-nav-link header-nav-sub-link">BOOKS</a></li>
+            <li><a href="subcategory.music" class="header-nav-link header-nav-sub-link">MUSIC</a></li>
+            <li><a href="subcategory.sports" class="header-nav-link header-nav-sub-link">SPORTS</a></li>
+            <li><a href="subcategory.textbook" class="header-nav-link header-nav-sub-link">TEXTBOOK</a></li>
+            <li><a href="subcategory.others" class="header-nav-link header-nav-sub-link">OTHERS</a></li>
+        </ul>
+         
+         <li>
+          <a href="#" class="header-nav-link header-nav-top-link">{{ Auth::user()->name }}</a>
+          <ul>
+            <li><a href="{{ route('users.show', Auth::id()) }}" class="header-nav-link header-nav-sub-link">My Page</a></li>
+              <li><a href="{{ route('logout.get') }}" class="header-nav-link header-nav-sub-link">Logout</a></li>
+            
+       
+          </ul>
+        </li>                  
+           
+                   
+    </div>
+  </div>
+</div>
