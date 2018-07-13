@@ -10,7 +10,7 @@
         <div class="panel panel-default">
             <div class="panel-body">
                     {!! Form::open(['route' => 'posts.store','input type' => 'hidden', 'name' => 'subcategory', 'value' => $subcategory['name']]) !!}
-                  
+
                     {!! Form::hidden('subcategory', $subcategory['name']) !!}
         
                 <div class="form-group">
