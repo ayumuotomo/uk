@@ -59,7 +59,7 @@
                 @endif
             </div>
             
-            
+             @include('post_favorite.favorite_button', ['user' => $user])
              
         </div>
     </li>
