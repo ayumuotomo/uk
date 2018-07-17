@@ -10,12 +10,14 @@
                 <a href="/" class="header-nav-link header-nav-top-link">Home</a>
             </li>
             
-            <li>
+            <li class="category">
                 <a href="/" class="header-nav-link header-nav-top-link">Category</a>
                 <ul>
+                  <li>
                 @foreach(config('app.category') as $category)
-               <a href="subcategory/{{ ($category['name']) }}"  class="header-nav-link header-nav-sub-link">{{strtoupper($category['name'])}}</a>
+                <a href="{{ url('subcategory/'.$category['name']) }}"  class="header-nav-link header-nav-sub-link">{{strtoupper($category['name'])}}</a>
                 @endforeach
+                </li>
                 </ul>
             </li>
             

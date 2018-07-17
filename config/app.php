@@ -113,6 +113,31 @@ return [
     ],
     
     
+/*   ３つに分けようとした
+
+    'toppage' => [
+        
+        'lifestyle' => [
+            'food', 
+            'leisure'
+            ],
+            
+        'entertainment' => [
+            'sports', 
+            'books', 
+            'movies', 
+            'music'
+            ],
+            
+        'learning' => [
+            'textbooks',
+            'others'
+            ],
+            
+                ],
+                */    
+    
+    
     
 
     /*

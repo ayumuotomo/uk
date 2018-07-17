@@ -46,7 +46,7 @@ Route::delete('unfavorite', 'PostFavoriteController@destroy')->name('posts.unfav
 
 
 Route::resource('posts', 'PostsController', ['only' => ['store', 'destroy']]);
-});
+
  
 
 
@@ -77,4 +77,6 @@ Route::get('subcategory.sports', function(){
 });
 Route::get('subcategory.others', function(){
     return view('subcategory.others');
+});
+
 });
