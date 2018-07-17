@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Post;
+
 class ToppageController extends Controller
 {
      public function index()
@@ -12,9 +14,11 @@ class ToppageController extends Controller
         if (\Auth::check())
         {
             $user = \Auth::user();
-           
+            $posts = Post::orderBy('created_at', 'desc')->get()->take(10);
+          
             $data = [
                 'user' => $user,
+                'posts' => $posts,
                
             ];
              return view('toppage', $data);
