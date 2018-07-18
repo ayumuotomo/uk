@@ -1,25 +1,26 @@
 @extends('layouts.app')
 
+
 <ul class="media-list">
 @foreach ($posts as $post)
     <?php $user = $post->user; ?>
+    
+         
     <li class="media">
-        
     <div class="container">
         <div class="media-body">
            
-           <table class="table table-bordered">
-              
-                <a href="{{ url('posts/'.$post->id.'/show') }}">
-              <div class="row">
-                   <div class="col-md-6">
-                       <div class="panel panel-default">　
+           <div class="col-md-6">
+               <table class="table table-bordered">
+                             <a href="{{ url('posts/'.$post->id.'/show') }}" >
+          
+            <div class="row">
+                         <div class="panel panel-default">　
                             <div style="display:inline-flex">
+                               
                                <div class="panel-body">
-                                   
-                                    <h3>{!! nl2br(e($post->title)) !!}</h3> 
-                                   
-                                </div>
+                                   <h3>{!! nl2br(e($post->title)) !!}</h3> 
+                               </div>
                             &nbsp;&nbsp;
 
                                <div class="panel-body">
@@ -27,12 +28,12 @@
                                 </div>
                             </div>
                             <br>
-                            </a>
-             
-                   
+                            
+                    
+
             <span class="text-muted">posted at {{ $post->created_at }}</span>
             
-            <div class="pull-right">
+            <div>
               
                 @if (Auth::user()->id == $post->user_id)
                     {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
@@ -40,20 +41,19 @@
                     {!! Form::close() !!}
                 @endif
                 
+
             </div>
             
- </div>
+</div>
+</div>
                <!-- </div> -->
             
-            
-          
-
-
-</div>
+          </div>
+           </a>
 </div>
     </li>
-
 </ul>    
+
     
 @endforeach
 
