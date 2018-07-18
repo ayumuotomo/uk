@@ -26,10 +26,13 @@
                                     <h3>{!! nl2br(e($post->subject)) !!}</h3>　
                                 </div>
                             </div>
+                            <br>
                             </a>
-                    </div>
+             
+                   
             <span class="text-muted">posted at {{ $post->created_at }}</span>
-           <div style="display:inline-flex">
+            
+            <div class="pull-right">
               
                 @if (Auth::user()->id == $post->user_id)
                     {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
@@ -37,9 +40,9 @@
                     {!! Form::close() !!}
                 @endif
                 
-                   
             </div>
-
+            
+ </div>
                <!-- </div> -->
             
             
