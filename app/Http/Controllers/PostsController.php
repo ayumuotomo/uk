@@ -113,7 +113,11 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
+       // echo $id; exit;
+        $post = Post::find($id) ;
+         return view('posts.detail', [
+            'post' => $post,
+        ]);
     }
 
     /**
