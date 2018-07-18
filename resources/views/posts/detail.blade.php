@@ -7,9 +7,11 @@
     <?php $user = $post->user; ?>
     <li class="media">
         <div class="media-body">
-            <div>
-               <span class="text-muted">posted at {{ $post->created_at }}</span>
-            </div>
+            
+            <br>
+            <br>
+            <br>
+            <br>
            
             <div>
                <p>{!! nl2br(e($post->title)) !!}　&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;　{!! nl2br(e($post->subject)) !!}</p>
@@ -22,6 +24,12 @@
             <div>
                 <p>By {!! nl2br($user->name) !!}</p>
             </div>
+            
+            
+               <span class="text-muted">posted at {{ $post->created_at }}</span>
+            
+                
+            @include('post_favorite.favorite_button', ['user' => $user])     
                 
            
                 
