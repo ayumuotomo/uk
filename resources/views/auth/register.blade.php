@@ -1,31 +1,40 @@
+<br>
+<br>
+<br>
+<br>
+
 @extends('layouts.app')
 
 @section('content')
+<div class="container"></div>
 <div class="row">
-    <div class="col-xs-offset-3 col-xs-6">
+    <div class="col-lg-12 text-center">
         <div class="panel panel-default">
-            <div class="panel-heading">Sign Up</div>
-            <div class="panel-body">
+             <h2 class="section-heading text-uppercase">Sign Up
+             </h2>
+             
+            <div class="panel-body" "row text-center">
                 {!! Form::open(['route' => 'signup.post']) !!}
-                    <div class="form-group">
-                        {!! Form::label('name', 'お名前') !!}
+                    <div class="offset-3 col-md-6" "form-group">
+                        {!! Form::label('name', 'Name') !!}
                         {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
                     </div>
 
                    
 
-                    <div class="form-group">
-                        {!! Form::label('password', 'パスワード') !!}
+                    <div class="offset-3 col-md-6" "form-group">
+                        {!! Form::label('password', 'Password') !!}
                         {!! Form::password('password', ['class' => 'form-control']) !!}
                     </div>
 
-                    <div class="form-group">
-                        {!! Form::label('password_confirmation', 'パスワード（確認）') !!}
+                    <div class="offset-3 col-md-6" "form-group">
+                        {!! Form::label('password_confirmation', 'Password（Confirmation）') !!}
                         {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                     </div>
+                    <br>
 
-                    <div class="text-right">
-                        {!! Form::submit('登録する', ['class' => 'btn btn-success']) !!}
+                    <div class="offset-3 col-md-6" "text-center">
+                        {!! Form::submit('Register', ['class' => 'btn btn-success']) !!}
                     </div>
                 {!! Form::close() !!}
             </div>

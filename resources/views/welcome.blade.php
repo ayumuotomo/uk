@@ -1,7 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
+
+
+    <!-- Header -->
+    
+     <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Your Interests lead to new relationships!</div>
+          <!--<div class="intro-heading text-uppercase">It's Nice To Meet You</div>-->
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ route('signup.get') }}">Sign Up</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ route('login') }}">Log In</a>
+        </div>
+      </div>
+    </header>
    
+
+ <!-- 
         <div class="cover">
              <div class="cover-inner">
                 <h1>Your interests lead to new relationships</h1>
@@ -11,7 +27,7 @@
                
             </div>
         </div>
-
+-->
 @endsection
 
                         
