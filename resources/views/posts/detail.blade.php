@@ -24,11 +24,10 @@
             　 <li class="list-group-item">{!! nl2br(e($post->detail)) !!}</li> <br>
       
         </ul>
-          
-             
-                   <br>
-                   <div class="text-muted">BY <h3>{!! nl2br($user->name) !!}   </h3> </fiv>
             
+            <div class="col-md-5">
+            <div class="alert alert-info" role="alert">BY {!! nl2br($user->name) !!}</div>
+            </div>
       
       <div class="col-md-6"></div>
       
@@ -37,10 +36,6 @@
                <span class="text-muted">posted at {{ $post->created_at }}</span>
                </div>
                
-               <br>
-               <br>
-               <br>
-               <br>
                <br>
                <br>
             
