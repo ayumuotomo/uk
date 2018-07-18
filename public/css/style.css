@@ -37,30 +37,6 @@ header-nav-link header-nav-sub-link{
   
 }
 
-
-.media {
-  float:left;
-  display: inline;
-  
+.input btn.btn-danger {
+  z-index:1;
 }
-
-.ramen {
-  overflow: hidden;
-}
-
-.ramen:before,
-.ramen:after {
-    content: "";
-    display: table;
-}
-
-.ramen:after {
-    clear: both;
-}
- 
-/* For IE 6/7 (trigger hasLayout) */
-.boxContainer {
-    zoom: 1;
-}
-
-.
