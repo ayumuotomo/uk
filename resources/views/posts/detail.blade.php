@@ -11,23 +11,42 @@
             <br>
             <br>
             <br>
-           
-            <div>
-               <p>{!! nl2br(e($post->title)) !!} </p>
-               
-               <p>{!! nl2br(e($post->subject)) !!}</p>
             
-               <p>{!! nl2br(e($post->detail)) !!}</p>
+        <ul class="list-group">
+            
+               <div class="text-muted">TITLE</div>
+               <li class="list-group-item"> {!! nl2br(e($post->title)) !!}</li>  
+    <br>           
+               <div class="text-muted">CONTENTS</div>
+            　 <li class="list-group-item"> {!! nl2br(e($post->subject))!!}</li>
+    <br>
+               <div class="text-muted">DETAILS</div>
+            　 <li class="list-group-item">{!! nl2br(e($post->detail)) !!}</li> <br>
+      
+        </ul>
           
-               <p>By {!! nl2br($user->name) !!}</p>
-            </div>
+             
+                   <br>
+                   <div class="text-muted">BY <h3>{!! nl2br($user->name) !!}   </h3> </fiv>
             
-            
+      
+      <div class="col-md-6"></div>
+      
+      
+               <div class="text-right">
                <span class="text-muted">posted at {{ $post->created_at }}</span>
+               </div>
+               
+               <br>
+               <br>
+               <br>
+               <br>
+               <br>
+               <br>
             
-                
+            <div class="pull-left">  
             @include('post_favorite.favorite_button', ['user' => $user])     
-                
+            </div>
            
                 
             <div>
