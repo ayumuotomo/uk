@@ -33,7 +33,7 @@
 
             <span class="text-muted">posted at {{ $post->created_at }}</span>
             
-            <div　class = 'ramen'>
+            <div　class >
               
                 @if (Auth::user()->id == $post->user_id)
                     {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
