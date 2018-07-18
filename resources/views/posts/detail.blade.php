@@ -11,18 +11,15 @@
             <br>
             <br>
             <br>
-            <br>
            
             <div>
-               <p>{!! nl2br(e($post->title)) !!}　&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;　{!! nl2br(e($post->subject)) !!}</p>
-            </div>
+               <p>{!! nl2br(e($post->title)) !!} </p>
+               
+               <p>{!! nl2br(e($post->subject)) !!}</p>
             
-            <div>
-                <p>{!! nl2br(e($post->detail)) !!}</p>
-            </div>
-            
-            <div>
-                <p>By {!! nl2br($user->name) !!}</p>
+               <p>{!! nl2br(e($post->detail)) !!}</p>
+          
+               <p>By {!! nl2br($user->name) !!}</p>
             </div>
             
             
