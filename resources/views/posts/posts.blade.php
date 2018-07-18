@@ -1,19 +1,23 @@
 @extends('layouts.app')
 
+
 <ul class="media-list">
 @foreach ($posts as $post)
     <?php $user = $post->user; ?>
+    
+         
     <li class="media">
-        
     <div class="container">
         <div class="media-body">
            
            <table class="table table-bordered">
-              
-                <a href="{{ url('posts/'.$post->id.'/show') }}">
+             <a href="{{ url('posts/'.$post->id.'/show') }}" >
+               
               <div class="row">
+                   
+                  
                    <div class="col-md-6">
-                       <div class="panel panel-default">　
+
                             <div style="display:inline-flex">
                                <div class="panel-body">
                                    
@@ -26,7 +30,7 @@
                                     <h3>{!! nl2br(e($post->subject)) !!}</h3>　
                                 </div>
                             </div>
-                            </a>
+                            
                     </div>
             <span class="text-muted">posted at {{ $post->created_at }}</span>
            <div style="display:inline-flex">
@@ -38,17 +42,21 @@
                 @endif
                 
                    
-            </div>
+            
+           
 
                <!-- </div> -->
             
-            
+          </div>
+           </a>
           
 
 
 </div>
 </div>
+
     </li>
+
     
     
 @endforeach
