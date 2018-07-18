@@ -9,6 +9,8 @@
         <div class="media-body">
            
            <table class="table table-bordered">
+              
+                <a href="{{ url('posts/'.$post->id.'/show') }}">
               <div class="row">
                    <div class="col-md-6">
                        <div class="panel panel-default">　
@@ -24,6 +26,7 @@
                                     <h3>{!! nl2br(e($post->subject)) !!}</h3>　
                                 </div>
                             </div>
+                            </a>
                     </div>
             <span class="text-muted">posted at {{ $post->created_at }}</span>
            <div style="display:inline-flex">
@@ -34,12 +37,11 @@
                     {!! Form::close() !!}
                 @endif
                 
-                   <a href="{{ url('posts/'.$post->id.'/show') }}">detail</a>
+                   
             </div>
 
                <!-- </div> -->
-            <div class="col-md-6"></div>
-            </div>
+            
             
           
 
