@@ -9,17 +9,17 @@
         <div class="media-body">
            
            <div class="row">
-               <div class="col-md-6">
-                   <div class="well">
-                       <div style="display:inline-flex">
-                            <div class="text-left">
-                                <h3>{!! nl2br(e($post->title)) !!}</h3> 
-                            </div>
+                   <div class="col-md-6">
+                       <div class="well">　
+                            <div style="display:inline-flex">
+                               <div>
+                                    <h3>{!! nl2br(e($post->title)) !!}</h3> 
+                                </div>
                             &nbsp;&nbsp;
-                           <div class="text-center">
-                                <h3>{!! nl2br(e($post->subject)) !!}</h3>　
+                               <div>
+                                    <h3>{!! nl2br(e($post->subject)) !!}</h3>　
+                                </div>
                             </div>
-                       </div>
                     </div>
             <span class="text-muted">posted at {{ $post->created_at }}</span>
            <div style="display:inline-flex">
