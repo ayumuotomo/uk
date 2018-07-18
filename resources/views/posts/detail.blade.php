@@ -43,16 +43,7 @@
             @include('post_favorite.favorite_button', ['user' => $user])     
             </div>
            
-                
-            <div>
-                @if (Auth::user()->id == $post->user_id)
-                    {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
-                        {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
-                    {!! Form::close() !!}
-                @endif
-            </div>
-            
-            
+           
              
         </div>
     </li>
