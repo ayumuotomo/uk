@@ -22,12 +22,6 @@
             </div>
             </div>
             
-           <!-- 詳細を表示するコード
-            
-               <div>
-                <h2>{!! nl2br(e($post->detail)) !!}</h2>
-            </div>
-                </div> -->
                  
                  <div>
                <span class="text-muted">posted at {{ $post->created_at }}</span>
@@ -51,3 +45,10 @@
 @endforeach
 
 </ul>
+
+ <!-- 詳細を表示するコード
+            
+               <div>
+                <h2>{!! nl2br(e($post->detail)) !!}</h2>
+            </div>
+                </div> -->
