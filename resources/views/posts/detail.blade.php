@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+
+@section('content')
 <ul class="media-list">
 
     <?php $user = $post->user; ?>
@@ -37,3 +39,4 @@
     </li>
 
 </ul>
+@endsection

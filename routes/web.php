@@ -40,11 +40,6 @@ Route::group(['middleware' => 'auth'], function () {
     });
     
     
-    //URLを指定
-    /**Route::get('posts/{category}', 'PostsController@index');*/
-    
-    
-    
     Route::resource('posts', 'PostsController', ['only' => ['store', 'destroy']]);
     
     Route::get('posts/{id}/show', 'PostsController@show');
