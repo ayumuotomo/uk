@@ -51,6 +51,16 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 
+
+
+//URLを指定
+/**Route::get('posts/{category}', 'PostsController@index');*/
+
+
+
+Route::resource('posts', 'PostsController', ['only' => ['store', 'destroy']]);
+
+
  
 
 
@@ -82,3 +92,4 @@ Route::get('subcategory.sports', function(){
 Route::get('subcategory.others', function(){
     return view('subcategory.others');
 });
+
