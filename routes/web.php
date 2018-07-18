@@ -58,7 +58,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 
-Route::resource('posts', 'PostsController', ['only' => ['store', 'destroy']]);
+//Route::resource('posts', 'PostsController', ['only' => ['store', 'destroy']]);
 
 
  

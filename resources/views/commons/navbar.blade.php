@@ -9,7 +9,7 @@
             <li>
                 <a href="/" class="header-nav-link header-nav-top-link">Home</a>
             </li>
-            
+
             <li class="category">
                 <a href="/" class="header-nav-link header-nav-top-link">Category</a>
                 <ul>
