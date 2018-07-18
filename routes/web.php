@@ -27,26 +27,30 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 Route::group(['middleware' => 'auth'], function () {
     
     
-Route::resource('users', 'UsersController', ['only' =>  'show']);
-Route::group(['prefix' => 'users/{id}'], function () {
+    Route::resource('users', 'UsersController', ['only' =>  'show']);
+    Route::group(['prefix' => 'users/{id}'], function () {
       Route::post('follow', 'UserFollowController@store')->name('user.follow');
       Route::get('favorites', 'PostFavoriteController@favorites')->name('users.favorites');
     });
-
-Route::group(['prefix' => 'posts/{id}'], function () {
-Route::post('favorite', 'PostFavoriteController@store')->name('posts.favorite');
-Route::delete('unfavorite', 'PostFavoriteController@destroy')->name('posts.unfavorite');
-               
+    
+    Route::group(['prefix' => 'posts/{id}'], function () {
+        Route::post('favorite', 'PostFavoriteController@store')->name('posts.favorite');
+        Route::delete('unfavorite', 'PostFavoriteController@destroy')->name('posts.unfavorite');
+                   
     });
-
-
-//URLを指定
-/**Route::get('posts/{category}', 'PostsController@index');*/
-
-
-
-Route::resource('posts', 'PostsController', ['only' => ['store', 'destroy']]);
+    
+    
+    //URLを指定
+    /**Route::get('posts/{category}', 'PostsController@index');*/
+    
+    
+    
+    Route::resource('posts', 'PostsController', ['only' => ['store', 'destroy']]);
+    
+    Route::get('posts/{id}/show', 'PostsController@show');
 });
+
+
  
 
 

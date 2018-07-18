@@ -6,31 +6,13 @@
            
            
             <div>
-                <p>{!! nl2br(e($post->title)) !!}</p>
-            </div>
-            
-               <div>
-                <p>{!! nl2br(e($post->subject)) !!}</p>
-            </div>
-            
-               <div>
-                <p>{!! nl2br(e($post->detail)) !!}</p>
-            </div>
+                <p>{!! nl2br(e($post->title)) !!}　&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;　{!! nl2br(e($post->subject)) !!}</p> 
+                <a href="{{ url('posts/'.$post->id.'/show') }}">detail</a>
                 
-                 <div>
-               <span class="text-muted">posted at {{ $post->created_at }}</span>
-            </div>
-                    
-                
-            <div>
-                @if (Auth::user()->id == $post->user_id)
-                    {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
-                        {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
-                    {!! Form::close() !!}
-                @endif
             </div>
             
             
+             
              
         </div>
     </li>
