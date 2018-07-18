@@ -57,15 +57,11 @@
 
     </li>
 
-    
+
+</ul>    
+
     
 @endforeach
 
-</ul>
 
- <!-- 詳細を表示するコード
-            
-               <div>
-                <h2>{!! nl2br(e($post->detail)) !!}</h2>
-            </div>
-                </div> -->
+
