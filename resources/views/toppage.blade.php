@@ -13,10 +13,14 @@
 
 
        <div class="input-type input-type-lg">
+           
 
         @foreach(config('app.category') as $category)
-        <a href="subcategory/{{ ($category['name']) }}">{{strtoupper($category['name'])}}</a><br>
+       <h3><a href="subcategory/{{ ($category['name']) }}">{{strtoupper($category['name'])}}</a></h3><br>
+       
         @endforeach
+             
+
         
         </div>
         
@@ -36,11 +40,7 @@
         @endif
         
       
-           
-
-    
-  
-   
+        
 </div>
 
 
