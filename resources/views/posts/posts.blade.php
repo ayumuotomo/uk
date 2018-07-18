@@ -6,6 +6,7 @@
     <li class="media">
         <div class="media-body">
            
+
            <div class="col-md-6">
            <div class="well">
           <div style="display:inline-flex">
@@ -36,9 +37,13 @@
                         {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
                     {!! Form::close() !!}
                 @endif
+                
+                
+                   <a href="{{ url('posts/'.$post->id.'/show') }}">detail</a>
           </div>
              
-             
+
+
         </div>
     </li>
     
