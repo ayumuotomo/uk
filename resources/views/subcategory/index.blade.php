@@ -60,15 +60,15 @@
                              <a href="{{ url('posts/'.$post->id.'/show') }}" >
           
             <div class="row">
-                         <div class="panel panel-default">　
+                         <div class="panel panel-default" >　
                             <div style="display:inline-flex">
                                
-                               <div class="panel-body">
+                               <div class="rounded-circle img-fluid" "panel-body">
                                    <h3>{!! nl2br(e($post->title)) !!}</h3> 
                                </div>
                             &nbsp;&nbsp;
 
-                               <div class="panel-body">
+                               <div class="rounded-circle img-fluid" "panel-body">
                                     <h3>{!! nl2br(e($post->subject)) !!}</h3>　
                                 </div>
                             </div>
@@ -76,7 +76,7 @@
                             
                     
 
-            <span class="text-muted">posted at {{ $post->created_at }}</span>
+           <!-- <span class="text-muted">posted at {{ $post->created_at }}</span> -->
             
             <div　class = 'ramen'>
               
