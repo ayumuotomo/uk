@@ -2,13 +2,14 @@
 <br>
 <br>
 <br>
+
 @extends('layouts.app')
-
-
 @section('content')
+
 <div class="container"></div>
 <div class="row">
     <div class="col-lg-12 text-center">
+
         <div class="panel panel-default">
              
             <div class="offset-3 col-md-6" "panel-body" "row text-center"></div>
