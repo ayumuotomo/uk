@@ -13,7 +13,7 @@
            <div class="col-md-6">
                <table class="table table-bordered">
                              <a href="{{ url('posts/'.$post->id.'/show') }}" >
-          
+               
             <div class="row">
                          <div class="panel panel-default">　
                             <div style="display:inline-flex">
@@ -43,6 +43,7 @@
                 
 
             </div>
+            
             
 </div>
 </div>
