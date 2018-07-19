@@ -1,4 +1,3 @@
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
 
 <div class="fullWidth header">
   <div class="container">
@@ -9,7 +8,6 @@
             <li>
                 <a href="/" class="header-nav-link header-nav-top-link">Home</a>
             </li>
-
             <li class="category">
                 <a href="/" class="header-nav-link header-nav-top-link">Category</a>
                 
@@ -25,7 +23,7 @@
             
             <li class="myprofile">
                 <a href="/" class="header-nav-link header-nav-top-link">{{ Auth::user()->name }}</a>
-                <ul>
+                   <ul>
                 <li>
                 <a href="{{ route('users.show', Auth::id()) }}" class="header-nav-link header-nav-sub-link">My Page</a>
                 </li>
@@ -45,3 +43,4 @@
     </div>
   </div>
 </div>
+
