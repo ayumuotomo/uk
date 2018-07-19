@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-
-
   <head>
 
     <meta charset="utf-8">
@@ -28,16 +24,19 @@
     <!--<script src="{{ secure_asset('https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700') }}" rel='stylesheet' type='text/css'></script>-->
 
     <!-- Custom styles for this template -->
+
+    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
      <link href="{{ url('css/agency.min.css') }}" rel="stylesheet"> 
     
+
     </head>
-
-
     <body>
         @include('commons.navbar')
 
         @yield('cover')
-
 
         <div class="container">
             @include('commons.error_messages')
