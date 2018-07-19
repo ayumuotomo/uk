@@ -13,7 +13,7 @@
              </h2>
              
             <div class="panel-body" "row text-center">
-                {!! Form::open(['route' => 'signup.post']) !!}
+                {!! Form::open(['route' => 'login.post']) !!}
                     <div class="offset-3 col-md-6" "form-group">
                         {!! Form::label('name', 'Name') !!}
                         {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
