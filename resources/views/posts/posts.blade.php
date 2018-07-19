@@ -1,5 +1,15 @@
 @extends('layouts.app')
 
+@section('content')
+
+<div class="container"></div>
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <div class="panel panel-default">
+             <h2 class="section-heading text-uppercase">Log In
+             </h2>
+             
+            <div class="panel-body" "row text-center">
 <ul class="media-list">
 @foreach ($posts as $post)
     <?php $user = $post->user; ?>
