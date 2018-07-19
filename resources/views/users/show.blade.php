@@ -13,10 +13,11 @@
         <aside class="col-xs-2">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">{{ $user->name }}</h3>
+                     <img src="img/team/RTBwings.jpg" alt="#"> 
+                    <h1 class="panel-title"><p class="font-italic">{{ $user->name }}</p></h1>
                 </div>
                 <div class="panel-body">
-                    <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->email, 200) }}" alt="">
+                    <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->email, 200) }}" alt=""> 
                 </div>
             </div>
         </aside>
