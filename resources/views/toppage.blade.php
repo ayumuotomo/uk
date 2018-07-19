@@ -6,6 +6,7 @@
 <br>
 <br>
 <br>
+
 <div class="container">
        <div class="input-type input-type-lg">
         @foreach(config('app.category') as $category)
@@ -17,11 +18,12 @@
 <br>
 <br>
 <br>
-        <div class="status text-center">
-        
+
+<div class="status text-center">
         @if (count($posts) > 0)
                 @include('posts.posts', ['posts' => $posts])
         @endif
+
 </div>
 
 @endsection
