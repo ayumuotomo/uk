@@ -2,14 +2,6 @@
 
 @section('content')
 
-<div class="container"></div>
-<div class="row">
-    <div class="col-lg-12 text-center">
-        <div class="panel panel-default">
-             <h2 class="section-heading text-uppercase">Log In
-             </h2>
-             
-            <div class="panel-body" "row text-center">
 <ul class="media-list">
 @foreach ($posts as $post)
     <?php $user = $post->user; ?>
@@ -19,27 +11,28 @@
     <div class="container">
         <div class="media-body">
            
-           <div class="col-md-6">
+           <div class="col-sm-2">
                <table class="table table-bordered">
                              <a href="{{ url('posts/'.$post->id.'/show') }}" >
           
             <div class="row">
-                         <div class="panel panel-default">　
-                            <div style="display:inline-flex">
+                         <div class="col-sm-2">
+                         <div class= "panel panel-default">　
+                            <!--<div style="display:inline-flex\">-->
                                
                                <div class="panel-body">
                                    <h3>{!! nl2br(e($post->title)) !!}</h3> 
                                </div>
+                               
                             &nbsp;&nbsp;
 
                                <div class="panel-body">
                                     <h3>{!! nl2br(e($post->subject)) !!}</h3>　
                                 </div>
                             </div>
+                            </div>
                             <br>
                             
-                    
-
             <span class="text-muted">posted at {{ $post->created_at }}</span>
             
             <div　class >
@@ -55,10 +48,8 @@
             
 </div>
 </div>
-               <!-- </div> -->
-            
-          </div>
-           </a>
+</div>
+</a>
 </div>
     </li>
     @endforeach
