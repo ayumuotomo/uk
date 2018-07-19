@@ -1,6 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+
+<br>
+<br>
+<br>
+<br>
+
     <div class="row">
         <aside class="col-xs-4">
             <div class="panel panel-default">
