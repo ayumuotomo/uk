@@ -3,11 +3,85 @@
 @section('content')
 
 
-
-
  <!-- Portfolio Grid -->
     <section class="bg-light" id="portfolio">
+      
       <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal">
+            
+              
+             
+              <div class="sample6">
+              <img src="img/portfolio/lifestyle_image.jpg" alt="#">
+              <div class="mask">
+                <div class="caption">
+                
+                    <a href="subcategory/food">Food</a><br>
+                      
+                    <a href="subcategory/leisure">Leisure</a>
+                  
+                </div>
+              </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal">
+            
+              
+             
+              <div class="sample6">
+              <img src="img/portfolio/entertainment_image.jpg" alt="#">
+              <div class="mask">
+                <div class="caption">
+                  
+                    <a href="subcategory/sports">Sports</a><br>
+                    <a href="subcategory/books">Books</a><br>
+                    <a href="subcategory/movie">Movie</a><br>
+                    <a href="subcategory/music">Music</a><br>
+                  
+                </div>
+              </div>
+              </div>
+            </a>
+          </div> 
+          
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal">
+            
+              
+             
+              <div class="sample6">
+              <img src="img/portfolio/learning_image.jpg" alt="#">
+              <div class="mask">
+                <div class="caption">
+                  
+                    <a href="subcategory/sports">Sports</a><br>
+                    <a href="subcategory/books">Books</a><br>
+                    <a href="subcategory/movie">Movie</a><br>
+                    <a href="subcategory/music">Music</a><br>
+                  
+                </div>
+              </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+              
+      
+       
+          
+
+@endsection
+              
+              
+              
+       <!--     <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase"> </h2>
@@ -19,14 +93,15 @@
             <a class="portfolio-link" data-toggle="modal">
             
               <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                 
-                </div>
+                
               </div>
-              <div class="portfolio-caption">
-              <h4><font color="#000">LifeStyle</font></h4>
+             
+              <div class="sample7">
+              <img src="img/portfolio/lifestyle_image.jpg" alt="#">
+              <div class="mask">
+                <div class="caption">Food/Leisure</div>
               </div>
-              <img class="img-fluid" src="img/portfolio/lifestyle_image.jpg" alt="">
+              </div>
             </a>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -38,7 +113,12 @@
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
-              </div>
+              </div>  
+              
+              
+              
+              
+              
               
               
               
@@ -51,12 +131,11 @@
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
               <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
+                <div class="sample6">
+              <img src="img/portfolio/learning_image.jpg" alt="#">
+              <div class="mask">
+                <div class="caption">Food/Leisure</div>
               </div>
-              <div class="portfolio-caption">
-              <h4><font color="#000">Learning</font></h4>
               </div>
               <img class="img-fluid" src="img/portfolio/learning_image.jpg" alt="">
             </a>
@@ -72,7 +151,6 @@
               
         </div>
       </div>
-    </section>
+    </section>-->
 
 
-@endsection
