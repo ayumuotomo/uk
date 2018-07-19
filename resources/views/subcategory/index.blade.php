@@ -41,6 +41,11 @@
     </div>
 </div>
 
+<br>
+<br>
+<br>
+<br>
+
 <ul class="media-list">
 @foreach ($posts as $post)
     <?php $user = $post->user; ?>
