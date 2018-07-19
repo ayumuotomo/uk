@@ -52,10 +52,11 @@
            </a>
 </div>
     </li>
+    @endforeach
 </ul>    
 
     
-@endforeach
+
 
 
 
