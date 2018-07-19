@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-
-
   <head>
 
     <meta charset="utf-8">
@@ -26,15 +22,13 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     </head>
-
-
     <body>
         @include('commons.navbar')
 
         @yield('cover')
-
 
         <div class="container">
             @include('commons.error_messages')

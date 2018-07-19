@@ -40,3 +40,39 @@ header-nav-link header-nav-sub-link{
 .input btn.btn-danger {
   z-index:1;
 }
+
+.portfolio-item {
+	padding: 0 !important;
+}
+.sample6 {
+
+	overflow:		hidden;
+	margin:			10px 8px 10px 16px;
+	position:		relative;
+}
+.sample6 img {
+	max-width: 100%;
+} 
+.sample6 .caption {
+	font-size:		130%;
+	color:			#fff;
+	text-align: center;
+	height: 100%;
+	padding-top: 5%;
+	
+}
+.sample6 .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;
+	top:			-100%;	/* 枠の上に置いて表示させない */
+	left:			0;
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.6s ease;
+	transition:		all 0.6s ease;
+}
+.sample6:hover .mask {
+	top:			0;	/* 下に降りてくる���うに見せる */
+	
+
+}
