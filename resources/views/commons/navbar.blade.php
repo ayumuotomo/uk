@@ -11,6 +11,9 @@
           <a href="{{ url('subcategory/'.$category['name']) }}"  class="header-nav-link header-nav-sub-link">{{strtoupper($category['name'])}}</a>
           @endforeach
       </li>
+      
+      &nbsp&nbsp;
+      
       <div class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}</a>
         <ul class="dropdown-menu">
