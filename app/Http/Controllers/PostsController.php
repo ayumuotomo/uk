@@ -18,27 +18,28 @@ class PostsController extends Controller
         $data = [];
         if(\Auth::Check()){
             $user=\Auth::user();
-           
+           // $posts=$user->feed_posts()->orderBy('created_at','desc')->paginate(10);
             $posts = Post::where('subcategory', $name)->paginate(20);
-            $cat = config('app.category');
+             $cat = config('app.category');
+            // dd($cat[$name]);
+            
+            
+            
             
             $data=[
                 'user'=>$user,
                 'posts'=>$posts,
                 'subcategory' => $cat[$name],
             ];
-             /** $date += $this -> counts($user);
+            
+          /** $date += $this -> counts($user);
             
             return view('users.show',$data);}else{ */
                return view('subcategory.index', $data);
                 
             }
             
-            
-           
-        
-            
-            }
+        }
     
 
     /**
@@ -50,7 +51,8 @@ class PostsController extends Controller
     {
         
     }
-      /**
+
+    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -72,6 +74,8 @@ class PostsController extends Controller
             'detail' => $request->detail,
         ]);
         return redirect()->back();
+        
+        
          /**if(\Auth::check(){
             $this->validate($request, [
             'subcategory' => 'required|max191',
@@ -100,7 +104,8 @@ class PostsController extends Controller
 
         return redirect()->back();
     }
-  /**
+
+    /**
      * Display the specified resource.
      *
      * @param  int  $id
@@ -125,7 +130,8 @@ class PostsController extends Controller
     {
         //
     }
-     /**
+
+    /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -150,40 +156,7 @@ class PostsController extends Controller
         if (\Auth::id() === $post->user_id) {
             $post->delete();
         }
-return redirect()->back();
+
+        return redirect()->back();
     }
-    
-    
-    public function search(Request $request) {
-        
-        // var_dump($request);exit;
-        #キーワード受け取り
-            
-            $keyword = $request->input('keyword');
-            
-            #クエリ生成
-            $query = Post::query();
- 
-            #もしキーワードがあったら
-            if(!empty($keyword))
-            {
-                $query->where('title','like','%'.$keyword.'%')->orWhere('subject','like','%'.$keyword.'%');
-            }
-            
-              #ページネーション
-            $posts = $query->orderBy('created_at','desc')->paginate(10);
-            
-            $user = \Auth::user();
-           
-          
-            $data = [
-                'user' => $user,
-                'posts' => $posts,
-                
-                'keyword'=>$keyword,
-                ];
-            
-            return view('toppage',$data);
-    }
-    
 }
