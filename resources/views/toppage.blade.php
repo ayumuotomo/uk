@@ -67,7 +67,7 @@
                   
                     <a href="subcategory/sports">Sports</a><br>
                     <a href="subcategory/books">Books</a><br>
-                    <a href="subcategory/movie">Movie</a><br>
+                    <a href="subcategory/movies">Movies</a><br>
                     <a href="subcategory/music">Music</a><br>
                   
                 </div>
