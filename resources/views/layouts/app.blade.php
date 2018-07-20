@@ -25,11 +25,8 @@
 
     <!-- Custom styles for this template -->
 
-    <link href="css/agency.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-
-     <link href="{{ url('css/agency.min.css') }}" rel="stylesheet"> 
+    <link href="css/agency.css" rel="stylesheet">
+    <link href="{{ url('css/agency.min.css') }}" rel="stylesheet"> 
     
 
     </head>

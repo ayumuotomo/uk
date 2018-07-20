@@ -1,37 +1,43 @@
+<br>
+<br>
+<br>
+<br>
+
 @extends('layouts.app')
 @section('content')
 
+<div class="container"></div>
+<div class="row">
+    <div class="col-lg-12 text-center">
 
-<br>
-<br>
-<br>
-<br>
-  
-
-  <div class="row">
-    <div class="col-xs-offset-3 col-xs-6">
         <div class="panel panel-default">
-            <div class="panel-body">
+             
+            <div class="offset-3 col-md-6" "panel-body" "row text-center"></div>
                     {!! Form::open(['route' => 'posts.store','input type' => 'hidden', 'name' => 'subcategory', 'value' => $subcategory['name']]) !!}
 
                     {!! Form::hidden('subcategory', $subcategory['name']) !!}
         
-                <div class="form-group">
+                <div class="offset-3 col-md-6" "form-group">
                     <label>{{ $subcategory['label']['place'] }}</label>
                             {!! Form::textarea('title', old('title'), ['class' => 'form-control', 'rows' => '2', 'placeholder' => $subcategory['placeholder']['place']]) !!}
                 </div>
        
-                <div class="form-group">
+                <div class="offset-3 col-md-6" "form-group">
                     <label>{{ $subcategory['label']['title'] }}</label>
                             {!! Form::textarea('subject', old('subject'), ['class' => 'form-control', 'rows' => '2', 'placeholder' => $subcategory['placeholder']['title']]) !!}
                 </div>
         
-                <div class="form-group">
+                <div class="offset-3 col-md-6" "form-group">
                     <label>Details</label>
                             {!! Form::textarea('detail', old('deatail'), ['class' => 'form-control', 'rows' => '2',  'placeholder' => 'Free space' ]) !!}
                 </div>
+                
+                <br>
+                <br>
+                <br>
+                
 
-                <div class="text-right">
+                <div class="offset-3 col-md-6" "text-right">
                             {!! Form::submit('Post', ['class' => 'btn btn-primary btn-block']) !!}
                 </div>
                     {!! Form::close()!!}
@@ -40,10 +46,14 @@
     </div>
 </div>
 
+<<<<<<< HEAD
 <br>
 <br>
 <br>
 <br>
+=======
+
+>>>>>>> master
 
 <ul class="media-list">
 @foreach ($posts as $post)
@@ -59,15 +69,15 @@
                              <a href="{{ url('posts/'.$post->id.'/show') }}" >
           
             <div class="row">
-                         <div class="panel panel-default">　
+                         <div class="panel panel-default" >　
                             <div style="display:inline-flex">
                                
-                               <div class="panel-body">
+                               <div class="rounded-circle img-fluid" "panel-body">
                                    <h3>{!! nl2br(e($post->title)) !!}</h3> 
                                </div>
                             &nbsp;&nbsp;
 
-                               <div class="panel-body">
+                               <div class="rounded-circle img-fluid" "panel-body">
                                     <h3>{!! nl2br(e($post->subject)) !!}</h3>　
                                 </div>
                             </div>
@@ -75,7 +85,7 @@
                             
                     
 
-            <span class="text-muted">posted at {{ $post->created_at }}</span>
+           <!-- <span class="text-muted">posted at {{ $post->created_at }}</span> -->
             
             <div　class = 'ramen'>
               
