@@ -17,6 +17,8 @@
       <div class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}</a>
         <ul class="dropdown-menu">
+          
+          
           <li>
             <a href="{{ route('users.show', Auth::id()) }}" class="header-nav-link header-nav-sub-link">My Page</a>
           </li>
