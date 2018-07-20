@@ -46,7 +46,14 @@
     </div>
 </div>
 
+<<<<<<< HEAD
+<br>
+<br>
+<br>
+<br>
+=======
 
+>>>>>>> master
 
 <ul class="media-list">
 @foreach ($posts as $post)
