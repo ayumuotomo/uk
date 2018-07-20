@@ -1,10 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-
+ 
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
 <div class="container-fluid">
 <div class="row">
- 
+
 <!--↓↓ 検索フォーム ↓↓-->
 <div class="col-sm-4" style="padding:20px 0; padding-left:0px;">
 <form class="form-inline" action="/views/toppage">
