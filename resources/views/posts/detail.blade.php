@@ -1,8 +1,16 @@
+<br>
+<br>
+<br>
+<br>
+
 @extends('layouts.app')
-
-
 @section('content')
-<ul class="media-list">
+<div class="container">
+    <div class="row">
+    <div class="col-lg-12 text-center">
+    <div class="panel panel-default">
+        
+    <ul class="media-list">
 
     <?php $user = $post->user; ?>
     <li class="media">
@@ -12,7 +20,7 @@
             <br>
             <br>
             
-        <ul class="list-group">
+        <ul class="offset-3 col-md-6" "list-group">
             
                <div class="text-muted">TITLE</div>
                <li class="list-group-item"> {!! nl2br(e($post->title)) !!}</li>  
@@ -24,14 +32,24 @@
             　 <li class="list-group-item">{!! nl2br(e($post->detail)) !!}</li> <br>
       
         </ul>
-            
-            <div class="col-md-5">
-            <div class="alert alert-info" role="alert">BY {!! nl2br($user->name) !!}</div>
+        
+    <br>
+    <br>
+    
+        <ul class="timeline">       
+          <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>
+            BY {!! nl2br($user->name) !!}</h4>
             </div>
-      
-      <div class="col-md-6"></div>
-      
-      
+            </li>
+            </ul>
+            
+             <div class="pull-center">  
+            @include('post_favorite.favorite_button', ['user' => $user])     
+            </div>
+            </div>
+     
                <div class="text-right">
                <span class="text-muted">posted at {{ $post->created_at }}</span>
                </div>
@@ -39,9 +57,7 @@
                <br>
                <br>
             
-            <div class="pull-left">  
-            @include('post_favorite.favorite_button', ['user' => $user])     
-            </div>
+           
            
            
              

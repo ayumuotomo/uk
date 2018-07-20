@@ -6,14 +6,15 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container"></div>
-<div class="row">
+
+
+
+
     <div class="col-lg-12 text-center">
-        <div class="panel panel-default">
-             <h2 class="section-heading text-uppercase">Sign Up
-             </h2>
+        <!--<div class="panel panel-default">-->
+             <h2 class="section-heading text-uppercase">Sign Up</h2>
              
-            <div class="panel-body" "row text-center">
+            <!--<div class="panel-body" "row text-center">-->
                 {!! Form::open(['route' => 'signup.post']) !!}
                     <div class="offset-3 col-md-6" "form-group">
                         {!! Form::label('name', 'Name') !!}
@@ -37,8 +38,8 @@
                         {!! Form::submit('Register', ['class' => 'btn btn-success']) !!}
                     </div>
                 {!! Form::close() !!}
-            </div>
-        </div>
+            <!--</div>-->
+        <!--</div>-->
     </div>
-</div>
+
 @endsection
