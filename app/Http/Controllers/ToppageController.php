@@ -19,7 +19,7 @@ class ToppageController extends Controller
             $data = [
                 'user' => $user,
                 'posts' => $posts,
-                 'keyword'=>null,
+                'keyword'=>null,
                
             ];
              return view('toppage', $data);

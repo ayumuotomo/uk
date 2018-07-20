@@ -38,7 +38,8 @@ Route::group(['middleware' => 'auth'], function () {
      Route::resource('posts', 'PostsController', ['only' => ['store', 'destroy']]);
     
     Route::get('posts/{id}/show', 'PostsController@show');
-    Route::get('views/toppage', 'PostsController@search');
+    Route::get('posts/search', 'PostsController@search');
+   /* Route::post('posts/{id}/search', 'PostsController@search');*/
    
 });
 
