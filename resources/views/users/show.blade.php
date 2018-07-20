@@ -15,11 +15,9 @@
                 <div class="panel-heading">
                     <h1 class="panel-title"><p class="font-italic">{{ $user->name }}</p></h1>
                 </div>
-                <div class="panel-body">
-                   <img src='img/team/f00936.jpg' class='img-responsive'>
-                
-                <!--    <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->email, 200) }}" alt=""> -->
-                </div>
+                <!--<div class="panel-body">-->
+                   <!--<img src="{{ url('img/team/f00936.jpg') }}" >-->
+                <!--</div>-->
             </div>
         </aside>
         
@@ -48,5 +46,18 @@
     </div>
 
 </div>
+
+
+
+
+
+
+<div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{{ secure_asset('img/team/1.jpg') }}" alt="">
+                              </div>
+                </div>
+                </div>
     
 @endsection
