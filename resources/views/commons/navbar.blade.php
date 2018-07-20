@@ -32,6 +32,16 @@
           @endif
       </ul>
     </div>
+    <div class="col-sm-4" style="padding:20px 0; padding-left:0px;">
+<form class="form-inline" action="/posts/search" method="GET">
+  <div class="form-group">
+   
+        <input type="text" name="keyword" value="" class="form-control" placeholder="キーワードを入力してください！！">
+    
+  </div>
+  <input type="submit" value="検索" class="btn btn-info">
+</form>
+</div>
   </div>
 </nav>
     
