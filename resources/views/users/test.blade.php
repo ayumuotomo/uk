@@ -1,3 +1,12 @@
+<img class="logo" src="{{ asset('image/logo.jpg') }}" alt="logo">
+
+
+  <img src="{{ asset('$subcategory['photo']['icon']' ) }}" alt="books">
+
+
+'photo' => [
+                'icon' => 'img/book.jpg'
+            ],
 @extends('layouts.app')
 
 @section('content')

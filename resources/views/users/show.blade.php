@@ -17,9 +17,6 @@
                 <div class="panel-heading">
                     <h1 class="panel-title"><p class="font-italic">{{ $user->name }}</p></h1>
                 </div>
-                <!--<div class="panel-body">-->
-                   <!--<img src="{{ url('img/team/f00936.jpg') }}" >-->
-                <!--</div>-->
             </div>
         </aside>
         
