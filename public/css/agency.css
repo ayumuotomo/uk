@@ -771,6 +771,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .clearfix::after{
    content: '';
     display: block;
-    height:40px;
+    height:80px;
     clear: both;
 }

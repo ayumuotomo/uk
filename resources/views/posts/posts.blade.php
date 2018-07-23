@@ -18,5 +18,9 @@
                     {!! Form::close() !!}
                 @endif
     </div>
+    
 @endforeach
 </div>
+
+
+<div class="clearfix"></div>

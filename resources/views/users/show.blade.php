@@ -2,11 +2,7 @@
 
 @section('content')
 
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="clearfix"></div>
 
 <div class='container-fluid'>
         <aside class="col-xs-4">
@@ -21,8 +17,7 @@
             </div>
         </aside>
         
-<br>
-<br>
+<div class="clearfix"></div>
         
     
         <div class="col-md-10">
@@ -38,8 +33,8 @@
                 </div>
             </ul>     
             
-<br>
-<br>
+<div class="clearfix"></div>
+
 @include('posts.posts')
         </div>
 </div>
