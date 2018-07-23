@@ -13,6 +13,7 @@ return [
                 'place' => '二子玉川',
                 'title' => 'Bills'
             ],
+            'icon' => 'food.jpg'
             
         ],
         
@@ -21,13 +22,13 @@ return [
             'label' => [
                 'place' => 'Place',
                 'title' => 'Activity'
-        ],
-        'placeholder' => [
-            'place' => '軽井沢',
-            'title' => 'ハレルニテラス'
-        ], 
-        
             ],
+            'placeholder' => [
+                'place' => '軽井沢',
+                'title' => 'ハレルニテラス'
+            ], 
+             'icon' => 'leisure.jpg'
+        ],
         
             
         'sports' => [
@@ -40,6 +41,7 @@ return [
                 'place' => 'バスケットボール',
                 'title' => 'Warriors'
             ],
+             'icon' => 'sports.jpg'
           ],
           
         
@@ -54,6 +56,7 @@ return [
                 'place' => '東野圭吾',
                 'title' => '卒業'
             ],
+             'icon' => 'book.jpg'
         ], 
         
         
@@ -68,6 +71,7 @@ return [
                 'place' => 'Steve Spilzberg',
                 'title' => 'IT'
             ],
+             'icon' => 'movie.jpg'
         ],
         
         
@@ -82,6 +86,7 @@ return [
                 'place' => 'Taylor Swift',
                 'title' => 'Love Story'
             ],
+             'icon' => 'music.jpg'
         ],
         
         
@@ -96,6 +101,7 @@ return [
                 'place' => 'プログラミング',
                 'title' => '初めてのPHP'
             ],
+             'icon' => 'learning.jpg'
         ],
         
 
@@ -109,6 +115,7 @@ return [
                 'place' => 'Apple',
                 'title' => 'iPhone8'
             ],
+             'icon' => 'others.jpg'
         ],
     ],
     

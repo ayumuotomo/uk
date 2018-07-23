@@ -8,6 +8,7 @@
 @extends('layouts.app')
 @section('content')
 
+
 <div class="clearfix"></div>
 
     <div class="col-lg-12 text-center">
@@ -34,6 +35,7 @@
                             {!! Form::close()!!}
                 </div>
         <!--</div>-->
+
 </div>
 
 <div class="clearfix"></div>

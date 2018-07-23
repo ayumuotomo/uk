@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+
+<br><br><br>
+
          <!-- Header -->
     <header class="masthead">
       <div class="container">
