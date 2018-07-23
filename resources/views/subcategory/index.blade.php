@@ -2,6 +2,8 @@
 <br>
 <br>
 <br>
+<br>
+<br>
 
 @extends('layouts.app')
 @section('content')
@@ -23,19 +25,19 @@
                     <label>Details</label>
                             {!! Form::textarea('detail', old('deatail'), ['class' => 'form-control', 'rows' => '2',  'placeholder' => 'Free space' ]) !!}
                 </div>
-                <br>
-                <br>
-                <br>
+<br>
+<br>
+<br>
                 <div class="offset-3 col-md-6" "text-right">
                             {!! Form::submit('Post', ['class' => 'btn btn-primary btn-block']) !!}
+                            {!! Form::close()!!}
                 </div>
-                    {!! Form::close()!!}
-            </div>
         </div>
     </div>
 </div>
 
-
+<br>
+<br>
 
 <div class="row post-list">
 @foreach ($posts as $post)
@@ -51,9 +53,4 @@
     </div>
 @endforeach
 </div> 
-
-
-
 @endsection
-
-
