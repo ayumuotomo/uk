@@ -1,5 +1,3 @@
-
-
 @extends('layouts.app')
 
 @section('content')
@@ -11,55 +9,45 @@
 <br>
 
 <div class='container-fluid'>
-    <div class="row">
+    <!--<div class="row">-->
         <aside class="col-xs-4">
             <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h1 class="panel-title"><p class="font-italic">{{ $user->name }}</p></h1>
-                </div>
-                <!--<div class="panel-body">-->
-                   <!--<img src="{{ url('img/team/f00936.jpg') }}" >-->
+                <!--<div class="box18">-->
+                    <!--<div class="panel-heading">-->
+                        <h1 class="panel-title"><p><div class="section-subheading text-muted">{{ $user->name }}</p></h1>
+                        </div>
+                    <!--</div>-->
                 <!--</div>-->
+              
             </div>
         </aside>
         
 <br>
 <br>
-<br>
-<br>
         
-        <div class="col-md-9">
+    
+        <div class="col-md-10">
             <ul class="nav nav-tabs">
+                    
                 
-                <div class="col-md-7">
-                    <li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}" class="text-info">History <span class="badge">{{ $count_posts }}</span></a></li>
+                <div class="col-md-6">
+                    <li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}" class="text-black"><h3>History <span class="badge">{{ $count_posts }}</h3></span></a></li>
                 </div>
                 
-                <div class="col-md-4">
-                <li role="presentation" class="{{ Request::is('users/*/favorites') ? 'active' : '' }}"><a href="{{ route('users.favorites', ['id' => $user->id]) }}" class="text-success">Favorites <span class="badge">{{ $count_favorites }}</span></a></li>
+                <div class="col-md-6">
+                <li role="presentation" class="{{ Request::is('users/*/favorites') ? 'active' : '' }}"><a href="{{ route('users.favorites', ['id' => $user->id]) }}" class="text-black"><h3>Favorites <span class="badge">{{ $count_favorites }}</h3></span></a></li>
                 </div>
-            </ul>
+            </ul>     
             
-            
-            @if (count($posts) > 0)
-                @include('posts.posts', ['posts' => $posts])
-            @endif
+<br>
+<br>
+@include('posts.posts')
         </div>
-    </div>
+    <!--</div>-->
 
 </div>
 
 
 
 
-
-
-<div class="row">
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="{{ secure_asset('img/team/1.jpg') }}" alt="">
-                              </div>
-                </div>
-                </div>
-    
 @endsection

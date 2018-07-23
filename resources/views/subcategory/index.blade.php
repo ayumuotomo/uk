@@ -10,7 +10,7 @@
 
 <div class="row">
     <div class="col-lg-12 text-center">
-        <div class="panel panel-default">
+        <!--<div class="panel panel-default">-->
                     {!! Form::open(['route' => 'posts.store','input type' => 'hidden', 'name' => 'subcategory', 'value' => $subcategory['name']]) !!}
                     {!! Form::hidden('subcategory', $subcategory['name']) !!}
                 <div class="offset-3 col-md-6" "form-group">
@@ -32,25 +32,13 @@
                             {!! Form::submit('Post', ['class' => 'btn btn-primary btn-block']) !!}
                             {!! Form::close()!!}
                 </div>
-        </div>
+        <!--</div>-->
     </div>
 </div>
 
 <br>
 <br>
 
-<div class="row post-list">
-@foreach ($posts as $post)
-    <div class="col-sm-4">
-        <div class="comment">
-            <a href="{{ url('posts/'.$post->id.'/show') }}" >
-                <h3>{!! nl2br(e($post->title)) !!}<br /> 
-                {!! nl2br(e($post->subject)) !!}</h3>　
+@include('posts.posts')
 
-            </a>
-
-        </div>
-    </div>
-@endforeach
-</div> 
 @endsection
