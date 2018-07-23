@@ -1,52 +1,50 @@
+<br>
+<br>
+<br>
+<br>
+
 @extends('layouts.app')
-
-
 @section('content')
-<ul class="media-list">
 
+   
+<div class="col-lg-12 text-center">
+   
     <?php $user = $post->user; ?>
-    <li class="media">
-        <div class="media-body">
+        <!--li class="media">
+        <div class="media-body"-->
             
             <br>
             <br>
             <br>
             
-        <ul class="list-group">
+    <ul class="offset-3 col-md-6" "list-group">
             
-               <div class="text-muted">TITLE</div>
-               <li class="list-group-item"> {!! nl2br(e($post->title)) !!}</li>  
-    <br>           
-               <div class="text-muted">CONTENTS</div>
-            　 <li class="list-group-item"> {!! nl2br(e($post->subject))!!}</li>
-    <br>
-               <div class="text-muted">DETAILS</div>
-            　 <li class="list-group-item">{!! nl2br(e($post->detail)) !!}</li> <br>
+        <div class="text-muted">TITLE</div>
+        <li class="list-group-item"> {!! nl2br(e($post->title)) !!}</li>  
+            <br>           
+        <div class="text-muted">CONTENTS</div>
+        <li class="list-group-item"> {!! nl2br(e($post->subject))!!}</li>
+            <br>
+        <div class="text-muted">DETAILS</div>
+        <li class="list-group-item">{!! nl2br(e($post->detail)) !!}</li> 
+            <br>
       
-        </ul>
+    </ul>
+        
+            <br>
+            <br>
+    
+        
+        <h4>BY {!! nl2br($user->name) !!}</h4>
             
-            <div class="col-md-5">
-            <div class="alert alert-info" role="alert">BY {!! nl2br($user->name) !!}</div>
-            </div>
-      
-      <div class="col-md-6"></div>
-      
-      
-               <div class="text-right">
-               <span class="text-muted">posted at {{ $post->created_at }}</span>
-               </div>
-               
-               <br>
-               <br>
-            
-            <div class="pull-left">  
+        <div class="pull-center">
             @include('post_favorite.favorite_button', ['user' => $user])     
-            </div>
-           
-           
-             
         </div>
-    </li>
+                
+</div>
+     
+<div class="text-right">
+    <span class="text-muted">posted at {{ $post->created_at }}</span>
+</div>
 
-</ul>
 @endsection

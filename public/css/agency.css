@@ -733,3 +733,33 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 	
 
 }
+
+.timeline-image{
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  margin-left: 0;
+  text-align: center;
+  color: white;
+  border: 7px solid #e9ecef;
+  border-radius: 100%;
+  background-color: #fed136;
+}
+
+.comment{
+  width: 250px;
+  height: 250px;
+  background-color: #fed136;
+  border-radius: 100%;
+  border: 7px solid #e9ecef;
+}
+/*黄色*/
+.comment h3{
+  color:#fff;
+  text-align:center;
+  margin-top:50px;
+  padding:30px;
+}
+

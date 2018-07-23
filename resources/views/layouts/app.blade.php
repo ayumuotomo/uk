@@ -22,25 +22,27 @@
     <!--<script src="{{ secure_asset('https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic') }}" rel='stylesheet' type='text/css'></script>-->
      <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'> 
     <!--<script src="{{ secure_asset('https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700') }}" rel='stylesheet' type='text/css'></script>-->
+     <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css' rel='stylesheet' type='text/css'> 
 
     <!-- Custom styles for this template -->
 
-    <link href="css/agency.css" rel="stylesheet">
+    <link href="{{ url('css/agency.css') }}" rel="stylesheet">
     <link href="{{ url('css/agency.min.css') }}" rel="stylesheet"> 
     
 
     </head>
     <body>
         @include('commons.navbar')
+        <div class="container">
 
         @yield('cover')
 
-        <div class="container">
             @include('commons.error_messages')
             @yield('content')
         </div>
 
         @include('commons.footer')
+
     </body>
 </html>
 
