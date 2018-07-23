@@ -78,7 +78,7 @@
     </section>
               
       
-       
+@include('posts.posts')
           
 
 @endsection

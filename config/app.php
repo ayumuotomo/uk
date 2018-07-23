@@ -64,11 +64,11 @@ return [
         'movies' => [
             'name' => 'movies',
             'label' => [
-                'place' => 'Director',
+                'place' => 'Director/Category',
                 'title' => 'Title'
             ],
             'placeholder' => [
-                'place' => 'Steve Spilzberg',
+                'place' => 'Steve Spilzberg/Love comedy',
                 'title' => 'IT'
             ],
              'icon' => 'movie.jpg'

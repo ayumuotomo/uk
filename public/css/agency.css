@@ -761,7 +761,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .comment h3{
   color:#fff;
   text-align:center;
-  margin-top:50px;
+  margin-top:25px;
   padding:30px;
 }
 
@@ -774,7 +774,12 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     display: block;
     height:80px;
     clear: both;
+}
 
 #content{
   padding-top: 50px;
+}
+
+.kaho {
+  text-align:center;
 }

@@ -1,3 +1,4 @@
+<div class="kaho">
 <div class="row post-list">
 @foreach ($posts as $post)
  <?php $user = $post->user; ?>
@@ -24,3 +25,4 @@
 
 
 <div class="clearfix"></div>
+</div>
