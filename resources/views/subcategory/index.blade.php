@@ -33,10 +33,9 @@
             </div>
         </div>
     </div>
+</div>
 
-<br>
-<br>
-<br>
+
 
 <div class="row post-list">
 @foreach ($posts as $post)

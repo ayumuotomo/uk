@@ -165,7 +165,7 @@ class PostsController extends Controller
     
     public function search(Request $request) {
         
-        // var_dump($request);exit;
+       
         #キーワード受け取り
             
             $keyword = $request->input('keyword');
@@ -192,8 +192,9 @@ class PostsController extends Controller
                 
                 'keyword'=>$keyword,
                 ];
+                
             
-            return view('toppage',$data);
+            return view('posts.search',$data);
     }
     
 }
