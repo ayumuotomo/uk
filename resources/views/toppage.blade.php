@@ -9,10 +9,8 @@
  <br>
 
 
-
-
  <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <section class="bg" id="portfolio">
       
       <div class="container">
         <div class="row">

@@ -6,6 +6,7 @@
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
 }
 
 p {
@@ -763,3 +764,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   padding:30px;
 }
 
+#content{
+  padding-top: 50px;
+}
