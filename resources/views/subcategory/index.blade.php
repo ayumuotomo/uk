@@ -8,7 +8,8 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="row">
+<div class="clearfix"></div>
+
     <div class="col-lg-12 text-center">
         <!--<div class="panel panel-default">-->
                     {!! Form::open(['route' => 'posts.store','input type' => 'hidden', 'name' => 'subcategory', 'value' => $subcategory['name']]) !!}
@@ -25,19 +26,17 @@
                     <label>Details</label>
                             {!! Form::textarea('detail', old('deatail'), ['class' => 'form-control', 'rows' => '2',  'placeholder' => 'Free space' ]) !!}
                 </div>
-<br>
-<br>
-<br>
+
+<div class="clearfix"></div>
+
                 <div class="offset-3 col-md-6" "text-right">
                             {!! Form::submit('Post', ['class' => 'btn btn-primary btn-block']) !!}
                             {!! Form::close()!!}
                 </div>
         <!--</div>-->
-    </div>
 </div>
 
-<br>
-<br>
+<div class="clearfix"></div>
 
 @include('posts.posts')
 

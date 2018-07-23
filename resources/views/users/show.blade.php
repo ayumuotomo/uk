@@ -9,7 +9,6 @@
 <br>
 
 <div class='container-fluid'>
-    <!--<div class="row">-->
         <aside class="col-xs-4">
             <div class="panel panel-default">
                 <!--<div class="box18">-->
@@ -43,11 +42,5 @@
 <br>
 @include('posts.posts')
         </div>
-    <!--</div>-->
-
 </div>
-
-
-
-
 @endsection

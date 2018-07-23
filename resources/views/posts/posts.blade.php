@@ -9,7 +9,8 @@
 
             </a>
             </div>
- <span class="text-muted">posted at {{ $post->created_at }}</span>
+           
+ <span class="text-muted">{{ $post->created_at }}</span>
             
                 @if (Auth::user()->id == $post->user_id)
                     {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
