@@ -1,16 +1,14 @@
-<br>
-<br>
-<br>
-<br>
 
 @extends('layouts.app')
 @section('content')
 
+<div class="clearfix"></div>
 
-<div class="container" id="content">
-    <div class="row">
+ <div class="container" id="content">
+    <!--<div class="row">-->
         <div class="col-lg-12 text-center">
-            <div class="panel panel-default">
+            <!--<div class="panel panel-default">-->
+
                 <div class="row">
                     <div class="col-md-3">
                         <img src="{{ url('img'). '/'. $subcategory['icon'] }}" alt="books">
@@ -37,6 +35,7 @@
                             </div>
                         {!! Form::close()!!}
                 </div>
+
             </div>
         </div>
     </div>
@@ -58,8 +57,6 @@
     </div>
 @endforeach
 </div> 
-
-
 
 @endsection
 

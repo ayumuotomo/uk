@@ -9,6 +9,8 @@
 
 
     <title>The U.K.</title>
+    
+    <link href="{{ url('css/style.css')}}" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap core CSS -->
      <link href="{{ url('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"> 
