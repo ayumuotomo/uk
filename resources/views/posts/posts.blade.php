@@ -8,13 +8,22 @@
                 {!! nl2br(e($post->subject)) !!}</h3>　
 
             </a>
-             <span class="text-muted">posted at {{ $post->created_at }}</span>
             </div>
+           
+ <span class="text-muted">{{ $post->created_at }}</span>
+            
+
                 @if (Auth::user()->id == $post->user_id)
                     {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
                         {!! Form::submit('Delete', ['class' => 'btn btn-danger btn']) !!}
                     {!! Form::close() !!}
                 @endif
     </div>
+
+    
 @endforeach
+</div>
+
+
+<div class="clearfix"></div>
 </div>

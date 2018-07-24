@@ -36,10 +36,10 @@
           @endif
        </ul>
      </div>
-
        
 <form  action="/posts/search" method="GET">
   <input class="search" type="text" value="" name="keyword" /></form>
+
   
   </div>
 </nav>
