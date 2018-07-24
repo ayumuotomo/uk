@@ -35,7 +35,7 @@
                     <br>
 
                     <div class="offset-3 col-md-6" "text-center">
-                        {!! Form::submit('Register', ['class' => 'btn btn-success']) !!}
+                        {!! Form::submit('Register', ['class' => 'btn-warning']) !!}
                     </div>
                 {!! Form::close() !!}
             <!--</div>-->
