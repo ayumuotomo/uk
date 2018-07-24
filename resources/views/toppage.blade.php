@@ -2,9 +2,8 @@
 
 @section('content')
  
- <br>
- <br>
- <br>
+ 
+<h1>Share your interests</h1>
 
  <!-- Portfolio Grid -->
     <section class="bg" id="portfolio">

@@ -2,8 +2,8 @@
 @foreach ($posts as $post)
  <?php $user = $post->user; ?>
     <div class="col-sm-4">
-        <div class="comment">
-            <a href="{{ url('posts/'.$post->id.'/show') }}" >
+        <div class="comment" id="lou">
+            <a href="{{ url('posts/'.$post->id.'/show') }}">
                 <h3>{!! nl2br(e($post->title)) !!}<br /> 
                 {!! nl2br(e($post->subject)) !!}</h3>　
 
