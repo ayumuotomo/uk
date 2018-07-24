@@ -35,6 +35,7 @@
 <div class="clearfix"></div>
 
 @include('posts.posts')
+
         </div>
 </div>
 @endsection

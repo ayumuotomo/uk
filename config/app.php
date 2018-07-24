@@ -35,11 +35,11 @@ return [
             'name' => 'sports',
             'label' => [
                 'place' => 'Sports',
-                'title' => 'Team'
+                'title' => 'Position/Team'
             ],
             'placeholder' => [
-                'place' => 'バスケットボール',
-                'title' => 'Warriors'
+                'place' => '野球',
+                'title' => 'キャッチャ/Rakuten Eagles'
             ],
              'icon' => 'sports.jpg'
           ],

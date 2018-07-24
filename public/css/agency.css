@@ -193,6 +193,7 @@ header.masthead .intro-text .intro-lead-in {
   font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
+  color: white;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -782,4 +783,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .kaho {
   text-align:center;
+}
+
+#navbarResponsive ul li{
+  color:#000000;
 }
