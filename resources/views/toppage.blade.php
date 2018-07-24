@@ -5,9 +5,6 @@
  <br>
  <br>
  <br>
- <br>
- <br>
-
 
  <!-- Portfolio Grid -->
     <section class="bg" id="portfolio">
@@ -77,7 +74,7 @@
       </div>
     </section>
               
-      
+@include('posts.posts')      
        
           
 

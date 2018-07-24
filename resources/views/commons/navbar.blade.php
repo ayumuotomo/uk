@@ -30,7 +30,7 @@
           @endif
       </ul>
     </div>
-    <div class="col-sm-2" style="padding:20px 0; padding-left:0px;">
+    <div class="col-sm-4" style="padding:20px 0; padding-left:0px;">
 <form class="form-inline" action="/posts/search" method="GET">
   <div class="form-group">
    

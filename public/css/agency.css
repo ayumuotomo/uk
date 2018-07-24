@@ -14,7 +14,7 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #736d71;
 }
 
 a:hover {
@@ -22,7 +22,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #736d71;
 }
 
 h1,
@@ -390,6 +390,7 @@ header.masthead .intro-text .intro-heading {
   position: relative;
   padding: 0;
   list-style: none;
+  margin:100px;
 }
 
 .timeline:before {
@@ -709,7 +710,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 } 
 .sample6 .caption {
 	font-size:		130%;
-	color:			#fff;
+	color:		#ffffff !important;
 	text-align: center;
 	height: 100%;
 	padding-top: 5%;
@@ -760,7 +761,26 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   padding:30px;
 }
 
-#content{
-  padding-top: 50px;
+.col-sm-4{
+  text-align:center;
+}
+
+.clearfix::after{
+   content: '';
+    display: block;
+    height:80px;
+    clear: both;
+}
+
+.btn-warning{
+  color: white;
+}
+
+.btn-warning:hover{
+  color: white;
+}
+
+.bg{
+  color:white;
 }
 
