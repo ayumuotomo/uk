@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 738dc4258def8bd34d121ea236f7cf9b36120def
 @extends('layouts.app')
 
 @section('content')
