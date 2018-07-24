@@ -15,15 +15,20 @@
    <div class="clearfix"></div>
    
             <div class="container" id="fukidashi">
-              <img src="img/icon.jpg">
                 <span class="arrow">For more information...</span>
-                  <p class="box23">
+                  <p class="box">
                     同期の好きなことを発見しよう  
+                  </p>
+                  <p class="box1">
+                    趣味を投稿しよう  
+                  </p>
+                  <p class="box2">
+                    新しい繋がりが作れる  
                   </p>
             </div>
    
           <br>
-            </div>
+              </div>
       </div>
     </header>
 
