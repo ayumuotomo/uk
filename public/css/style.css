@@ -90,3 +90,73 @@ header-nav-link header-nav-sub-link{
   border-radius: 100%;
   background-color: #fed136;
 }
+
+
+/*
+form.fa.fa-search.search-form {
+    display: block;
+    position: relative;
+}
+form.fa.fa-search.search-form:before, form.input.search-field {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+form.fa.fa-search.search-form:before {
+    z-index: 100;
+    line-height: 50px;
+    background: #65b1e4;
+    color: #FFF;
+    text-align: center;
+}
+form.input.search-field {
+    -moz--webkit-appearance: none;
+    border-radius: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    z-index: 200;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+form.input.search-field:focus {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    width: 100%;
+    cursor: text;
+}
+form.fa.fa-search.search-form input[type="submit"] {
+    display: none;
+}
+
+*/
+input {
+/*基本のスタイル*/
+    width: 50px;
+    height: 50px;
+    border: solid 2px #666666;
+    border-radius: 25px;
+/*テキスト入力のエリアを調整*/
+    padding: 20px;
+/*虫眼鏡アイコンを背景で指定*/
+    background-image: url("../img/logos/Search-icon.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+/*フォーカスしたときのトランジション設定 すべてのプロパティが0.5秒で切り替わる*/
+    transition: all 0.5s;
+}
+
+input:focus {
+/*フォーカスした時に横に伸ばす*/
+    width: 300px;
+/*フォーカスした時の虫眼鏡アイコンの位置調整*/
+    background-position: 96% 50%;
+/*テキスト入力が虫眼鏡アイコンに被らないように*/
+    padding-right: 50px;
+}
