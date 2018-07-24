@@ -2,6 +2,8 @@
 
 @section('content')
  
+<h1>Share your interests</h1>
+
  <!-- Portfolio Grid -->
     <section class="bg-" id="portfolio">
       
@@ -15,7 +17,7 @@
               <div class="sample6">
               <img src="img/portfolio/lifestyle_image.jpg" alt="#">
               <div class="mask">
-                <div class="caption">
+                <div class="caption" id="raki">
                 
                     <a href="subcategory/food">Food</a><br>
                       
@@ -35,7 +37,7 @@
               <div class="sample6">
               <img src="img/portfolio/entertainment_image.jpg" alt="#">
               <div class="mask">
-                <div class="caption">
+                <div class="caption" id="raki">
                   
                     <a href="subcategory/sports">Sports</a><br>
                     <a href="subcategory/books">Books</a><br>
@@ -55,7 +57,7 @@
               <div class="sample6">
               <img src="img/portfolio/learning_image.jpg" alt="#">
               <div class="mask">
-                <div class="caption">
+                <div class="caption" id="raki">
                   
                     <a href="subcategory/textbook">Textbook</a><br>
                     <a href="subcategory/others">Others</a><br>
@@ -106,8 +108,11 @@
         </div>
       </div>
     </section>
+
+    <div class="clearfix"></div>    
     
-    
+<h2>New Posts</h2>    
+
 @include('posts.posts')
 
 

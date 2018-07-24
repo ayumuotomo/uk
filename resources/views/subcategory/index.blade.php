@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 @section('content')
 
@@ -7,6 +8,7 @@
     <!--<div class="row">-->
         <div class="col-lg-12 text-center">
             <!--<div class="panel panel-default">-->
+
                 <div class="row">
                     <div class="col-md-3">
                         <img src="{{ url('img'). '/'. $subcategory['icon'] }}" alt="books">
@@ -33,13 +35,29 @@
                             </div>
                         {!! Form::close()!!}
                 </div>
-            <!--</div>-->
+
+            </div>
         </div>
-    <!--</div>-->
+    </div>
 </div>
 
-<div class="clearfix"></div>
 
-@include('posts.posts')
+
+<div class="row post-list">
+@foreach ($posts as $post)
+    <div class="col-sm-4">
+        <div class="comment" id="lou">
+            <a href="{{ url('posts/'.$post->id.'/show') }}" >
+                <h3>{!! nl2br(e($post->title)) !!}<br /> 
+                {!! nl2br(e($post->subject)) !!}</h3>　
+
+            </a>
+
+        </div>
+    </div>
+@endforeach
+</div> 
 
 @endsection
+
+
