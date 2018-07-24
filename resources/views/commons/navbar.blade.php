@@ -1,3 +1,5 @@
+
+
 <nav class="navbar navbar-expand-lg navbar-dark　fixed-top" id="mainNav">
   <div class="container">
   <a class="navbar-brand js-scroll-trigger" href="/">The U.K.</a>
@@ -28,18 +30,12 @@
           @else
               
           @endif
-      </ul>
-    </div>
-    <div class="col-sm-4" style="padding:20px 0; padding-left:0px;">
-<form class="form-inline" action="/posts/search" method="GET">
-  <div class="form-group">
-   
-        <input type="text" name="keyword" value="" class="form-control" placeholder="キーワードを入力してください！！">
-    
-  </div>
-  <input type="submit" value="検索" class="btn-warning">
-</form>
-</div>
+
+       </ul>
+     </div>
+       
+<form  action="/posts/search" method="GET">
+  <input class="search" type="text" value="" name="keyword" /></form>
   </div>
 </nav>
 
