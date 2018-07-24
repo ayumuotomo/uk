@@ -2,11 +2,6 @@
 
 @section('content')
  
-
-
-
-
-
  <!-- Portfolio Grid -->
     <section class="bg-" id="portfolio">
       
@@ -56,8 +51,7 @@
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal">
             
-              
-             
+        
               <div class="sample6">
               <img src="img/portfolio/learning_image.jpg" alt="#">
               <div class="mask">
