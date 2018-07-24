@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 738dc4258def8bd34d121ea236f7cf9b36120def
 @extends('layouts.app')
 
 @section('content')
@@ -11,12 +7,13 @@
 <div class='container-fluid'>
         <aside class="col-xs-4">
             <div class="panel panel-default">
-               <!--<div class="box18">-->
+                <!--<div class="box18">-->
                     <!--<div class="panel-heading">-->
                         <h1 class="panel-title"><p><div class="section-subheading text-muted">{{ $user->name }}</p></h1>
                         </div>
                     <!--</div>-->
                 <!--</div>-->
+
             </div>
         </aside>
         

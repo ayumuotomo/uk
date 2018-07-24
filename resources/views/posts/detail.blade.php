@@ -16,7 +16,8 @@
             <br>
             <br>
             <br>
-            
+     
+     
     <ul class="offset-3 col-md-6" "list-group">
             
         <div class="text-muted">TITLE</div>
@@ -30,17 +31,30 @@
             <br>
       
     </ul>
-        
+    
+ 
             <br>
             <br>
     
         
         <h4>BY {!! nl2br($user->name) !!}</h4>
             
+            
         <div class="pull-center">
+            
+            @if (Auth::user()->id == $post->user_id)
+                    {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
+                        {!! Form::submit('Delete', ['class' => 'btn btn-danger btn']) !!}
+                    {!! Form::close() !!}
+            
+            @else
+        
             @include('post_favorite.favorite_button', ['user' => $user])     
-        </div>
-                
+       
+            @endif
+        
+          </div>
+    
 </div>
      
 <div class="text-right">
