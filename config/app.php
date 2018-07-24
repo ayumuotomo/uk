@@ -64,7 +64,7 @@ return [
         'movies' => [
             'name' => 'movies',
             'label' => [
-                'place' => 'Director',
+                'place' => 'Director/Category',
                 'title' => 'Title'
             ],
             'placeholder' => [
