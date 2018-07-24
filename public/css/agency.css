@@ -760,8 +760,19 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .comment h3{
   color:#fff;
   text-align:center;
-  margin-top:50px;
+  margin-top:25px;
   padding:30px;
+}
+
+.col-sm-4{
+  text-align:center;
+}
+
+.clearfix::after{
+   content: '';
+    display: block;
+    height:80px;
+    clear: both;
 }
 
 #content{
