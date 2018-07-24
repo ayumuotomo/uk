@@ -15,6 +15,7 @@
 </form>
 </div>
 
+
 <!--↑↑ 検索フォーム ↑↑-->
  
 <div class="col-sm-8" style="text-align:right;">
@@ -22,6 +23,11 @@
   {{-- $Bdata->appends(Request::only(keyword))->links() --}}
   </div>
 </div>
+
+
+<br>
+<br>
+<br>
 
 <div >
         
