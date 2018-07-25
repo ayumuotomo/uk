@@ -809,6 +809,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .bg{
   color:white;
+  padding-bottom:200px !important;
 }
 
 .dropbtn {
@@ -855,3 +856,27 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   text-decoration: none;
 }
 
+#lifestyle{
+  position: absolute;
+}
+
+#entertainment{
+  position: absolute;
+}
+
+#learning{
+  position: absolute;
+}
+
+
+h4{
+  color:gray !important;
+  position: relative !important;
+  text-align: center !important;
+  opacity: 0.8 !important;
+}
+
+
+#services{
+  padding-top: 250px;
+}
