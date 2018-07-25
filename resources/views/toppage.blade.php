@@ -1,26 +1,30 @@
 @extends('layouts.app')
 
 @section('content')
- 
-<h1>Share your interests</h1>
+
+
+<h1>Share your interests...</h1>
+
 
  <!-- Portfolio Grid -->
     <section class="bg-" id="portfolio">
       
       <div class="container">
         <div class="row">
+          
+          
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal">
             
-              
+              <h4>LifeStyle</h4>
              
-              <div class="sample6">
+              <div class="sample6" id="lifestyle">
+             
               <img src="img/portfolio/lifestyle_image.jpg" alt="#">
               <div class="mask">
                 <div class="caption" id="raki">
-                
+                    
                     <a href="subcategory/food">Food</a><br>
-                      
                     <a href="subcategory/leisure">Leisure</a>
                   
                 </div>
@@ -32,13 +36,13 @@
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal">
             
-              
+              <h4>Entertainment</h4>
              
-              <div class="sample6">
+              <div class="sample6" id="entertainment">
               <img src="img/portfolio/entertainment_image.jpg" alt="#">
               <div class="mask">
                 <div class="caption" id="raki">
-                  
+                    
                     <a href="subcategory/sports">Sports</a><br>
                     <a href="subcategory/books">Books</a><br>
                     <a href="subcategory/movies">Movies</a><br>
@@ -53,12 +57,15 @@
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal">
             
+
+            <h4>Learning</h4>
         
-              <div class="sample6">
+              <div class="sample6" id="learning">
+
               <img src="img/portfolio/learning_image.jpg" alt="#">
               <div class="mask">
                 <div class="caption" id="raki">
-                  
+                    
                     <a href="subcategory/textbook">Textbook</a><br>
                     <a href="subcategory/others">Others</a><br>
 
@@ -111,10 +118,13 @@
 
     <div class="clearfix"></div>    
     
-    <div class="container">
+
+
+<div class="container">
 <h2>New Posts</h2>    
 <br>
 </div>
+
 @include('posts.posts')
 
 

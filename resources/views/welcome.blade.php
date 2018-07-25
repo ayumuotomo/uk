@@ -4,6 +4,7 @@
 
          <!-- Header -->
     <header class="masthead">
+
         <div class="intro-text">
           <div class="intro-lead-in">Your interests lead to new relationships!</div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ route('signup.get') }}">Sign Up</a>
@@ -21,7 +22,9 @@
   　</div>
    
           <br>
+
             </div>
+
     </header>
 
 @endsection
