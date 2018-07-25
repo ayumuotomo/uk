@@ -23,4 +23,9 @@
                 <p>New user? {!! link_to_route('signup.get', 'Sign up now!') !!}</p>
         </div>
 </div>
+<footer>
+    <div class="text-center text-muted">© 2018 THE U.K.</div>
+</footer>
+
 @endsection
+

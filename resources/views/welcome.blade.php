@@ -8,6 +8,7 @@
         <div class="intro-text">
           <div class="intro-lead-in">Your interests lead to new relationships!</div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ route('signup.get') }}">Sign Up</a>
+          &nbsp;
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ route('login') }}">Log In</a>
    
    <div class="clearfix"></div>
@@ -23,7 +24,12 @@
           <br>
 
             </div>
-
+    
+    <div class="text-center text-muted">© 2018 THE U.K.</div>
+   
+    
     </header>
+
+
 
 @endsection
