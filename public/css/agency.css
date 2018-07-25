@@ -910,3 +910,12 @@ h1{
   width: 100%;
 }
 
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   color:#ddd;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:#ddd;
+}
+::placeholder{ /* Others */
+color:#ddd
+}
