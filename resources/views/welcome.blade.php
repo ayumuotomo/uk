@@ -13,7 +13,6 @@
    <div class="clearfix"></div>
    
           
-   
   　<div class="dropdown">
       　<button class="dropbtn">Click here....</button>
         　<div class="dropdown-content">
