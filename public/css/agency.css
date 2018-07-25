@@ -904,5 +904,10 @@ h1{
 
 .teamuk{
   text-align: center;
-  
 }
+
+.harasan{
+  position: fixed;
+  width: 100%;
+}
+
