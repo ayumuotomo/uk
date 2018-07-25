@@ -7,7 +7,7 @@
  <!-- Portfolio Grid -->
     <section class="bg-" id="portfolio">
       
-      <div class="container">
+     <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal">
@@ -68,7 +68,6 @@
             </a>
           </div>
         </div>
-      </div>
     </section>
   
 
@@ -111,9 +110,11 @@
 
     <div class="clearfix"></div>    
     
+    <div class="container">
 <h2>New Posts</h2>    
-
+    </div>
 @include('posts.posts')
 
+</div>
 
 @endsection
