@@ -189,6 +189,7 @@ header.masthead .intro-text .intro-lead-in {
   font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
+  color: white;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -758,7 +759,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .comment h3{
   color:#fff;
   text-align:center;
-  margin-top:50px;
+  margin-top:25px;
   padding:30px;
 }
 
@@ -773,6 +774,76 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     clear: both;
 }
 
+#content{
+  padding-top: 50px;
+}
+
+.kaho {
+  text-align:center;
+}
+
+#navbarResponsive ul li{
+  color:#000000;
+}
+
+#fukidashi {
+  position: relative;
+  
+}
+
+.arrow {
+  color:white;
+  font-size: x-large;
+}
+
+.box23 {
+    position: relative;
+    margin: 2em 0 2em 40px;
+    padding: 8px 15px;
+    background: #fff0c6;
+    border-radius: 30px;
+}
+.box23:before{font-family: FontAwesome;
+    content: "\f111";
+    position: absolute;
+    font-size: 15px;
+    left: -40px;
+    bottom: 0;
+    color: #fff0c6;
+}
+.box23:after{
+    font-family: FontAwesome;
+    content: "\f111";
+    position: absolute;
+    font-size: 23px;
+    left: -23px;
+    bottom: 0;
+    color: transparent;
+}
+.box23 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+.arrow_box:after {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -50px;
+  border: solid transparent;
+  border-color: rgba(51, 51, 51, 0);
+  border-bottom-color: #333;
+  border-width: 10px;
+  pointer-events: none;
+  content: " ";
+}
+
+span:hover + p.box2 {
+  display: block;
+}
 .btn-warning{
   color: white;
 }
@@ -783,5 +854,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .bg{
   color:white;
+}
+
+#lou a{
+  text-decoration: none;
 }
 

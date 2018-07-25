@@ -13,12 +13,7 @@
                         </div>
                     <!--</div>-->
                 <!--</div>-->
-<<<<<<<<< saved version
 
-=========
-              
-
->>>>>>>>> local version
             </div>
         </aside>
         

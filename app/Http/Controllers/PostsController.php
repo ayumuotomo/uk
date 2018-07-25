@@ -65,7 +65,7 @@ class PostsController extends Controller
             'subcategory' => 'required|max:191',
             'title'=>'required|max:25',
             'subject' => 'required|max:25',
-            'detail' => 'required|max:191',
+            'detail' => 'max:191',
         ]);
         $request->user()->posts()->create([
             'subcategory' => $request->subcategory, 
