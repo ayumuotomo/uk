@@ -1,3 +1,4 @@
+<div class="container">
 <div class="kaho">
 <div class="row post-list">
 @foreach ($posts as $post)
@@ -22,4 +23,5 @@
 
 
 <div class="clearfix"></div>
+</div>
 </div>

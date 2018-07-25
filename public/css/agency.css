@@ -796,54 +796,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   font-size: x-large;
 }
 
-.box23 {
-    position: relative;
-    margin: 2em 0 2em 40px;
-    padding: 8px 15px;
-    background: #fff0c6;
-    border-radius: 30px;
-}
-.box23:before{font-family: FontAwesome;
-    content: "\f111";
-    position: absolute;
-    font-size: 15px;
-    left: -40px;
-    bottom: 0;
-    color: #fff0c6;
-}
-.box23:after{
-    font-family: FontAwesome;
-    content: "\f111";
-    position: absolute;
-    font-size: 23px;
-    left: -23px;
-    bottom: 0;
-    color: transparent;
-}
-.box23 p {
-    margin: 0; 
-    padding: 0;
-}
 
 
-.arrow_box:after {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -50px;
-  border: solid transparent;
-  border-color: rgba(51, 51, 51, 0);
-  border-bottom-color: #333;
-  border-width: 10px;
-  pointer-events: none;
-  content: " ";
-}
 
-span:hover + p.box2 {
-  display: block;
-}
 .btn-warning{
   color: white;
 }
@@ -857,6 +812,46 @@ span:hover + p.box2 {
   padding-bottom:200px !important;
 }
 
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 30px;
+    font-family: "Kaushan Script";
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: transparent;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: transparent;}
 #lou a{
   text-decoration: none;
 }

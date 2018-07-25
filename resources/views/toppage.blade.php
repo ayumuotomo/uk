@@ -2,10 +2,12 @@
 
 @section('content')
 
+
 <h1>Share your interests...</h1>
 
+
  <!-- Portfolio Grid -->
-    <section class="bg" id="portfolio">
+    <section class="bg-" id="portfolio">
       
       <div class="container">
         <div class="row">
@@ -55,9 +57,11 @@
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal">
             
+
             <h4>Learning</h4>
         
               <div class="sample6" id="learning">
+
               <img src="img/portfolio/learning_image.jpg" alt="#">
               <div class="mask">
                 <div class="caption" id="raki">
@@ -114,7 +118,11 @@
 
     <div class="clearfix"></div>    
     
+
+
+<div class="container">
 <h2>New Posts</h2>    
+</div>
 
 @include('posts.posts')
 
