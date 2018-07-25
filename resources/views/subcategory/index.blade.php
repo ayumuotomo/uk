@@ -42,7 +42,7 @@
 </div>
 
 
-
+<div class="container">
 <div class="row post-list">
 @foreach ($posts as $post)
     <div class="col-sm-4">
@@ -57,7 +57,7 @@
     </div>
 @endforeach
 </div> 
-
+</div>
 @endsection
 
 

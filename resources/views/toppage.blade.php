@@ -9,7 +9,7 @@
  <!-- Portfolio Grid -->
     <section class="bg-" id="portfolio">
       
-      <div class="container">
+     <div class="container">
         <div class="row">
           
           
@@ -75,7 +75,6 @@
             </a>
           </div>
         </div>
-      </div>
     </section>
   
 
@@ -122,9 +121,10 @@
 
 <div class="container">
 <h2>New Posts</h2>    
-</div>
-
+<br>
+    </div>
 @include('posts.posts')
 
+</div>
 
 @endsection

@@ -33,6 +33,7 @@
     <body>
         @include('commons.navbar')
 
+
         @yield('cover')
 
             @include('commons.error_messages')
