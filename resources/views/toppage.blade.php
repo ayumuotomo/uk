@@ -111,8 +111,9 @@
 
     <div class="clearfix"></div>    
     
+    <div class="container">
 <h2>New Posts</h2>    
-
+</div>
 @include('posts.posts')
 
 

@@ -32,13 +32,13 @@
     </head>
     <body>
         @include('commons.navbar')
-        <div class="container">
+  
 
         @yield('cover')
 
             @include('commons.error_messages')
             @yield('content')
-        </div>
+   
 
         @include('commons.footer')
 
