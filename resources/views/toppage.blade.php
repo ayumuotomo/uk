@@ -112,6 +112,7 @@
     
     <div class="container">
 <h2>New Posts</h2>    
+
     </div>
 @include('posts.posts')
 

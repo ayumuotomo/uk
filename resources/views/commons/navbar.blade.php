@@ -26,14 +26,21 @@
         </ul>
       </div>
       
-      @else
+      &nbsp&nbsp;
+
+      <div>
+        <form  action="/posts/search" method="GET">
+          <input class="search" type="text" value="" name="keyword" />
+        </form>
+      </div>
+      
+          @else
               
           @endif
 
        </ul>
      </div>
        
-<form  action="/posts/search" method="GET">
-  <input class="search" type="text" value="" name="keyword" /></form>
+
 </nav>
 
