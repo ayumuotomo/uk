@@ -14,19 +14,22 @@
       
       &nbsp&nbsp;
       
-      <div class="dropdown" id="otto">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}</a>
-        <ul class="dropdown-menu">
+      <!--<div class="dropdown" id="otto">-->
+      <!--  <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}</a>-->
+      <!--  <ul class="dropdown-menu">-->
           
           
           <li>
             <a href="{{ route('users.show', Auth::id()) }}" class="header-nav-link header-nav-sub-link">My Page</a>
           </li>
+          
+             &nbsp&nbsp;
+          
           <li>
             <a href="{{ route('logout.get') }}" class="header-nav-link header-nav-sub-link">Log out</a>
           </li>
-        </ul>
-      </div>
+        <!--</ul>-->
+      <!--</div>-->
       
       &nbsp&nbsp;
 
