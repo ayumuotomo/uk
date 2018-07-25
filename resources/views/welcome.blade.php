@@ -14,19 +14,16 @@
    
    <div class="clearfix"></div>
    
-            <div class="dropdown" id="fukidashi">
-              <button class="dropbtn">For more information...</button>
-                <div class="dropdown-content">
-                   <a href="#">同期の好きなことを発見しよう<br>  
-                  
-                    趣味を投稿しよう  <br>
-                
-                    新しい繋がりが作れる  </a>
-                </div>
+            <div class="container" id="fukidashi">
+              <img src="img/icon.jpg">
+                <span class="arrow">For more information...</span>
+                  <p class="box23">
+                    同期の好きなことを発見しよう  
+                  </p>
             </div>
    
           <br>
-              </div>
+            </div>
       </div>
     </header>
 
