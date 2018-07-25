@@ -3,6 +3,11 @@
 
    
 <div class="col-lg-12 text-center">
+
+
+    <h5>Let's check who posted this!<br>
+    If you like it, why not go talk to them tomorrow.</h5>
+
    
     <?php $user = $post->user; ?>
         <!--li class="media">
@@ -29,8 +34,9 @@
             <br>
             <br>
     
-        
+        <div id="ryohei">
         <h4>BY {!! nl2br($user->name) !!}</h4>
+        </div>
             
         <div class="pull-center">
             @include('post_favorite.favorite_button', ['user' => $user])     

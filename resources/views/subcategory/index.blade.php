@@ -2,7 +2,7 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="clearfix"></div>
+
 
  <div class="container" id="content">
     <!--<div class="row">-->
@@ -43,7 +43,7 @@
 
 
 <div class="container">
-<div class="row post-list">
+<div class="row post-list" id="otto">
 @foreach ($posts as $post)
     <div class="col-sm-4">
         <div class="comment" id="lou">
