@@ -10,13 +10,13 @@
 
     <title>The U.K.</title>
     
-    <link href="{{ url('css/style.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{ secure_asset('css/style.css')}}" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap core CSS -->
-     <link href="{{ url('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"> 
+     <link href="{{ secure_asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"> 
 
     <!-- Custom fonts for this template -->
-    <link href="{{ url('vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"> 
+    <link href="{{ secure_asset('vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"> 
      <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel="stylesheet" type="text/css">
      <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'> 
      <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
@@ -25,8 +25,8 @@
 
     <!-- Custom styles for this template -->
 
-    <link href="{{ url('css/agency.css') }}" rel="stylesheet">
-    <link href="{{ url('css/agency.min.css') }}" rel="stylesheet"> 
+    <link href="{{ secure_asset('css/agency.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/agency.min.css') }}" rel="stylesheet"> 
     
 
     </head>
