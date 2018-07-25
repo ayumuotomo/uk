@@ -1,9 +1,8 @@
-
-
 <nav class="navbar navbar-expand-lg navbar-dark　fixed-top" id="mainNav">
 
   <a class="navbar-brand js-scroll-trigger" href="/">The U.K.</a>
     <div class="collapse navbar-collapse" id="navbarResponsive">
+     
       <ul class="navbar-nav text-uppercase ml-auto">
       <li class="nav-item">
           @if (Auth::check())
@@ -14,7 +13,7 @@
       
       &nbsp&nbsp;
       
-      <div class="dropdown">
+      <div class="dropdown" id="otto">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}</a>
         <ul class="dropdown-menu">
           
@@ -28,6 +27,8 @@
         </ul>
       </div>
       
+      &nbsp&nbsp;
+
       <div>
         <form  action="/posts/search" method="GET">
           <input class="search" type="text" value="" name="keyword" />
@@ -41,5 +42,6 @@
        </ul>
      
        
+
 </nav>
 
