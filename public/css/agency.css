@@ -854,9 +854,31 @@ span:hover + p.box2 {
 
 .bg{
   color:white;
+  padding-bottom:200px !important;
 }
 
 #lou a{
   text-decoration: none;
 }
+
+#lifestyle{
+  position: absolute;
+}
+
+#entertainment{
+  position: absolute;
+}
+
+#learning{
+  position: absolute;
+}
+
+
+h4{
+  color:gray !important;
+  position: relative !important;
+  text-align: center !important;
+  opacity: 0.8 !important;
+}
+
 
