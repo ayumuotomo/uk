@@ -120,7 +120,7 @@
     
 
 
-<div class="container">
+#<div class="container">
 <h2>New Posts</h2>    
 </div>
 
