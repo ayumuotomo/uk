@@ -14,9 +14,9 @@
           
    
   　<div class="dropdown">
-      　<button class="dropbtn">For more information..</button>
+      　<button class="dropbtn">Click here....</button>
         　<div class="dropdown-content">
-          　    <a href="#">同期の好きな事を発見しよう<br>自分の好きな事を投稿しよう<br>オフラインで繋がるきっかけを作ろう</a>
+          　    <a href="#">同期の好きな事を発見<br>自分の好きな事を投稿<br>オフラインで繋がるきっかけ</a>
           </div>
   　</div>
    
