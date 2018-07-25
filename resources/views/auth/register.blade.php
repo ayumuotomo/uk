@@ -1,7 +1,3 @@
-<br>
-<br>
-<br>
-<br>
 
 @extends('layouts.app')
 
@@ -16,19 +12,19 @@
              
             <!--<div class="panel-body" "row text-center">-->
                 {!! Form::open(['route' => 'signup.post']) !!}
-                    <div class="offset-3 col-md-6" "form-group">
+                    <div class="offset-md-3 col-md-6" "form-group">
                         {!! Form::label('name', 'Name') !!}
                         {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
                     </div>
 
                    
 
-                    <div class="offset-3 col-md-6" "form-group">
+                    <div class="offset-md-3 col-md-6" "form-group">
                         {!! Form::label('password', 'Password') !!}
                         {!! Form::password('password', ['class' => 'form-control']) !!}
                     </div>
 
-                    <div class="offset-3 col-md-6" "form-group">
+                    <div class="offset-md-3 col-md-6" "form-group">
                         {!! Form::label('password_confirmation', 'Password（Confirmation）') !!}
                         {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                     </div>
