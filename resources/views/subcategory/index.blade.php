@@ -31,7 +31,7 @@
                             <br>
                             <br>
                             <div class="text-right">
-                            {!! Form::submit('Post', ['class' => 'btn btn-primary btn-block']) !!}
+                            {!! Form::submit('Post', ['class' => 'btn btn-block']) !!}
                             </div>
                         {!! Form::close()!!}
                 </div>
