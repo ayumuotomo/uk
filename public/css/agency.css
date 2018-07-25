@@ -850,7 +850,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: transparent;}
+.dropdown-content a:hover {background-color: transparent; color:white;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
