@@ -4,7 +4,9 @@
 
 
 <h1>Share your interests...</h1>
-
+<div class=teamuk><br>
+<P>8つのカテゴリーから選んで投稿しよう！</P>
+</div>
 
  <!-- Portfolio Grid -->
     <section class="bg-" id="portfolio">
@@ -120,7 +122,7 @@
 
 
 <div class="container">
-<h2>New Posts</h2>    
+<h2>New Posts!</h2>    
 <br>
     </div>
 @include('posts.posts')
