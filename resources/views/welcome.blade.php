@@ -17,7 +17,7 @@
   　<div class="dropdown">
       　<button class="dropbtn">Click here....</button>
         　<div class="dropdown-content">
-          　    <a href="#">同じコミュニティ内で<br>Share<br>Find<br>Connect<br>オフラインで繋がろう</a>
+          　    <a href="#">シェアして見つけて繋がって<br>明日の会話につなげよう</a>
           </div>
   　</div>
    
