@@ -92,49 +92,6 @@ header-nav-link header-nav-sub-link{
 }
 
 
-/*
-form.fa.fa-search.search-form {
-    display: block;
-    position: relative;
-}
-form.fa.fa-search.search-form:before, form.input.search-field {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    margin: 0;
-}
-form.fa.fa-search.search-form:before {
-    z-index: 100;
-    line-height: 50px;
-    background: #65b1e4;
-    color: #FFF;
-    text-align: center;
-}
-form.input.search-field {
-    -moz--webkit-appearance: none;
-    border-radius: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-    z-index: 200;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-}
-form.input.search-field:focus {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1;
-    width: 100%;
-    cursor: text;
-}
-form.fa.fa-search.search-form input[type="submit"] {
-    display: none;
-}
-
-*/
 input.search {
 /*基本のスタイル*/
     width: 50px;
@@ -160,3 +117,4 @@ input.search:focus {
 /*テキスト入力が虫眼鏡アイコンに被らないように*/
     padding-right: 50px;
 }
+
