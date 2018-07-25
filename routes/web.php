@@ -28,6 +28,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::group(['prefix' => 'users/{id}'], function () {
     //   Route::post('follow', 'UserFollowController@store')->name('user.follow');
       Route::get('favorites', 'PostFavoriteController@favorites')->name('users.favorites');
+      Route::get('history','UsersController@history')->name('users.history');
+        Route::get('favorite','PostFavoriteController@like')->name('users.like');
     });
     
     Route::group(['prefix' => 'posts/{id}'], function () {

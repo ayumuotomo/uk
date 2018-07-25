@@ -56,9 +56,11 @@
           </div>
     
 </div>
-     
+    
 <div class="text-right">
     <span class="text-muted">posted at {{ $post->created_at }}</span>
 </div>
-
+<?php
+echo '<a href="' . $_SERVER['HTTP_REFERER'] . '">戻る</a>';
+?>
 @endsection

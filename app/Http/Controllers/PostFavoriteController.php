@@ -22,7 +22,7 @@ class PostFavoriteController extends Controller
         return redirect()->back();
     }  
     
-     public function favorites($id)
+     public function like($id)
     {
         $user = User::find($id);
         $favorites = $user->favorites()->paginate(10);
@@ -34,6 +34,6 @@ class PostFavoriteController extends Controller
 
         $data += $this->counts($user);
 
-        return view('users.show', $data);
+        return view('users.favorites', $data);
     }
 }

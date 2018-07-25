@@ -19,7 +19,15 @@ class UsersController extends Controller
         ]);
     }
     
-    public function show($id)
+    public function show()
+    {
+        
+
+        return view('users.show');
+    }
+    
+    
+     public function history($id)
     {
         $user = User::find($id);
         $posts = $user->posts()->orderBy('created_at', 'desc')->paginate(10);
@@ -31,6 +39,10 @@ class UsersController extends Controller
 
         $data += $this->counts($user);
 
-        return view('users.show', $data);
+        return view('users.history', $data);
     }
+    
+    
+   
+    
 }
