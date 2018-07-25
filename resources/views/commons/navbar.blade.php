@@ -3,7 +3,8 @@
   <a class="navbar-brand js-scroll-trigger" href="/">The U.K.</a>
     <div class="collapse navbar-collapse" id="navbarResponsive">
      
-      <ul class="navbar-nav text-uppercase ml-auto">
+     
+           <ul class="navbar-nav text-uppercase ml-auto">
       <li class="nav-item">
           @if (Auth::check())
           @foreach(config('app.category') as $category)
