@@ -112,7 +112,7 @@
     
     <div class="container">
 <h2>New Posts</h2>    
-
+<br>
     </div>
 @include('posts.posts')
 
