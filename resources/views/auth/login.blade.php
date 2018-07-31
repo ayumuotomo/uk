@@ -16,7 +16,7 @@
                         {!! Form::password('password', ['class' => 'form-control']) !!}
                     </div><br>
                     <div class="offset-3 col-md-6" "text-center">
-                        {!! Form::submit('Login', ['class' => 'btn-warning']) !!}
+                        {!! Form::submit('Login', ['class' => 'btn']) !!}
                     </div>
                 {!! Form::close() !!}
                 </div>
