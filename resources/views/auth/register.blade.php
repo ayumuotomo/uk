@@ -12,7 +12,7 @@
             <!--<div class="panel-body" "row text-center">-->
                 {!! Form::open(['route' => 'signup.post']) !!}
                     <div class="offset-3 col-md-6" "form-group">
-                        {!! Form::label('name', 'Name') !!}
+                        {!! Form::label('name', 'Name (ex. Kaho 4B)') !!}
                         {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
                     </div>
 

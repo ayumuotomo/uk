@@ -25,15 +25,15 @@
       &nbsp&nbsp;
       
           
-          <li>
+          <h3>
             <a href="{{ route('users.show', Auth::id()) }}" class="header-nav-link header-nav-sub-link">My Page</a>
-          </li>
+          </h3>
           
              &nbsp&nbsp;
           
-          <li>
+          <h3>
             <a href="{{ route('logout.get') }}" class="header-nav-link header-nav-sub-link">Log out</a>
-          </li>
+          </h3>
 
       
     

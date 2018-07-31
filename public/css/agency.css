@@ -919,3 +919,7 @@ h1{
 ::placeholder{ /* Others */
 color:#ddd
 }
+
+.navbar .h3{
+  color: black;
+}
