@@ -19,7 +19,7 @@ class PostsController extends Controller
         if(\Auth::Check()){
             $user=\Auth::user();
            
-            $posts = Post::where('subcategory', $name)->orderBy('created_at', 'desc')->paginate(20);
+            $posts = Post::where('subcategory', $name)->orderBy('created_at', 'desc')->paginate(1000);
             $cat = config('app.category');
             
             $data=[
