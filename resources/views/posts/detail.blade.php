@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @section('content')
 
+<br>
+<br>
+<br>
+<br>
    
 <div class="col-lg-12 text-center">
 
