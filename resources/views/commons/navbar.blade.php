@@ -1,9 +1,10 @@
 @if (Auth::check())
-<nav class="navbar navbar-expand-lg navbar-dark　fixed-top" id="mainNav">
-
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <div class="container">
   <a class="navbar-brand js-scroll-trigger" href="/">The U.K.</a>
+  
     <div class="collapse navbar-collapse" id="navbarResponsive">
-     
+      
       <ul class="navbar-nav text-uppercase ml-auto">
       <li class="nav-item">
           
@@ -14,10 +15,6 @@
       
       &nbsp&nbsp;
       
-      <!--<div class="dropdown" id="otto">-->
-      <!--  <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}</a>-->
-      <!--  <ul class="dropdown-menu">-->
-          
           
           <li>
             <a href="{{ route('users.show', Auth::id()) }}" class="header-nav-link header-nav-sub-link">My Page</a>
@@ -28,8 +25,7 @@
           <li>
             <a href="{{ route('logout.get') }}" class="header-nav-link header-nav-sub-link">Log out</a>
           </li>
-        <!--</ul>-->
-      <!--</div>-->
+
       
       &nbsp&nbsp;
 
@@ -51,7 +47,7 @@
           @endif
 
        </ul>
-     
-       
+    </div> 
+  </div>
 
 </nav>
