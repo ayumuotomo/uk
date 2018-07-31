@@ -6,8 +6,17 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       
       <ul class="navbar-nav text-uppercase ml-auto">
+        
+
+      <div>
+        <form  action="/posts/search" method="GET">
+          <input class="search" type="text" value="" name="keyword" />
+        </form>
+      </div>
+               &nbsp&nbsp;
+ 
+        
       <li class="nav-item">
-          
           @foreach(config('app.category') as $category)
           <a href="{{ url('subcategory/'.$category['name']) }}"  class="header-nav-link header-nav-sub-link">{{strtoupper($category['name'])}}</a>
           @endforeach
@@ -27,14 +36,7 @@
           </li>
 
       
-      &nbsp&nbsp;
-
-      <div>
-        <form  action="/posts/search" method="GET">
-          <input class="search" type="text" value="" name="keyword" />
-        </form>
-      </div>
-      
+    
           @else
               
           <div class="harasan">

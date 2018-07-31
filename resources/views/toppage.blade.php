@@ -3,6 +3,8 @@
 @section('content')
 
 
+<br><br><br><br><br>
+
 <h1>Share your interests...</h1>
 <div class=teamuk><br>
 <P>8つのカテゴリーから選んで投稿しよう！</P>
